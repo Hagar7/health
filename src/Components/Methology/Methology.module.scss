@@ -1,0 +1,220 @@
+@import "../../index.scss";
+
+.mainMethology{
+    min-height: 100vh;
+    padding: 60px 0 ;
+    background-color: #F8F8F8;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    .item{
+        margin:50px auto;
+        background-color: #F2F2F2;
+        height: 600px;
+        width: 600px;
+        @include borderRadius(50%);
+        .itemUp{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .info{
+                padding-top: 40px;
+                //margin: 10px 10px;
+                width: 26%;
+                cursor: pointer;
+                transition: 1s all ease;
+                -webkit-transition: 1s all ease;
+                -moz-transition: 1s all ease;
+                -ms-transition: 1s all ease;
+                -o-transition: 1s all ease;
+                &:hover{
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                    -o-transform: scale(1.1);
+                }
+                .img{
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include borderRadius(20px);
+                    height: 160px;
+                    width: 160px;
+                    img{
+                        width: 70%;
+                    }
+                }
+                h6{
+                 margin-top: 15px;
+                 color:$DarkBlueColor;
+                 font-size: 18.2px;
+                 text-align: center;
+                 }
+             }
+             .modalMethology{
+                margin-bottom: 50px ;
+                .contentActivity{
+                    h1{
+                        text-align: center !important;
+                        color:$DarkBlueColor;
+                        font-family: "title";
+                        font-size: 25px;
+                    }
+                    .headerActivity{
+                        justify-content: flex-end;
+                        border-bottom: 1px solid transparent !important;
+                        i{
+                            color: $SecMainColor;
+                            font-size: 35px;
+                            cursor: pointer;
+                        }
+                    }
+                    p{
+                        text-align: center;
+                        color: $DarkBlueColor;
+                        font-family: "title";
+                    }
+                }
+            }
+        }
+     
+    }
+
+}
+
+
+
+  
+  @media screen and (max-width: 767px) {
+    .mainMethology{
+        min-height: 70vh;
+        .head{
+            h2{
+                font-size: 30px;
+               text-align: center;
+               margin-bottom: 10px;
+            }
+        }
+        .item{
+            margin:30px auto;
+            height: 330px;
+            width: 330px;
+            .itemUp{
+                .info{
+                    padding-top: 40px;
+                    width: 26%;
+                    cursor: pointer;
+                    .img{
+                        height: 80px;
+                        width: 80px;
+                        img{
+                            width: 60%;
+                        }
+                    }
+                    h6{
+                  
+                     font-size: 0.8rem;
+                     }
+                 }
+                 .modalMethology{
+                    margin-bottom: 50px ;
+                    .contentActivity{
+                        h1{
+                            text-align: center !important;
+                            color:$DarkBlueColor;
+                            font-family: "title";
+                            font-size: 25px;
+                        }
+                        .headerActivity{
+                            justify-content: flex-end;
+                            border-bottom: 1px solid transparent !important;
+                            i{
+                                color: $SecMainColor;
+                                font-size: 35px;
+                                cursor: pointer;
+                            }
+                        }
+                        p{
+                            text-align: center;
+                            color: $DarkBlueColor;
+                            font-family: "title";
+                        }
+                    }
+                }
+            }
+         
+        }
+    
+    }
+    body[dir='rtl']{
+        .mainMethology{
+            min-height: 70vh;
+            .head{
+                h2{
+                text-align: center;
+                margin-bottom: 10px;
+                }
+            }
+            .item{
+                .itemUp{
+                    .info{
+                        h6{
+                        font-family: "arabic";
+                         font-size: 0.8rem;
+                         }
+                     }
+                }
+            }
+        
+        }
+    }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .mainMethology{
+        min-height: 70vh;
+        .head{
+            h2{
+                font-size: 40px;
+               text-align: center;
+               margin-bottom: 10px;
+            }}
+        .item{
+            margin: 40px auto;
+            height: 630px;
+            width: 630px; 
+        }
+    
+    } 
+    body[dir='rtl']{
+        .mainMethology{
+            min-height: 70vh;
+            .head{
+                h2{
+                text-align: center;
+                margin-bottom: 10px;
+                }
+            }
+            .item{
+                .itemUp{
+                    .info{
+                        h6{
+                        font-family: "arabic";
+                         font-size: 2rem;
+                         }
+                     }
+                }
+            }
+        
+        }
+    }
+  }

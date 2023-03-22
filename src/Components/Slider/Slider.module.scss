@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+
+.myheader {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body[dir="rtl"]{
+    .myheader {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+    } 
+}
+  
+  
+@media screen and (max-width: 767px) {
+    .myheader {
+        min-height: 50vh;
+    }
+    body[dir="rtl"]{
+        .myheader {
+            min-height: 50vh;
+          
+        } 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .myheader {
+        min-height: 50vh;
+    }
+    body[dir="rtl"]{
+        .myheader {
+            min-height: 50vh;
+        } 
+    }
+}

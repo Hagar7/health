@@ -1,0 +1,159 @@
+@import "../../index.scss";
+
+.main{
+    padding: 60px 0 ;
+    background-color: #F2F2F2;
+    min-height: 100vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    .activityModal {
+        background-color: red !important;
+        .modalContent {
+          background-color: transparent;
+          border: 1px solid transparent !important;
+          .modalHeader {
+            border-bottom: 1px solid transparent !important;
+            .btnClose {
+              color: $SecMainColor;
+              box-sizing: content-box;
+              width: 1em;
+              height: 1em;
+              padding: 0.25em 0.25em;
+              border: 0;
+              border-radius: 0.375rem;
+              opacity: 0.5;
+              margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+                calc(-0.5 * var(--bs-modal-header-padding-x))
+                calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+              font-size: 30px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+    .modalActivity{
+        margin-bottom: 50px ;
+        .contentActivity{
+            h1{
+                text-align: center !important;
+                color:$DarkBlueColor;
+                font-family: "title";
+                font-size: 25px;
+            }
+            .headerActivity{
+                justify-content: flex-end;
+                border-bottom: 1px solid transparent !important;
+                i{
+                    color: $SecMainColor;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+            }
+            p{
+                text-align: center;
+                color: $DarkBlueColor;
+                font-family: "title";
+            }
+        }
+    }
+}
+
+body[dir="rtl"] {
+  
+.main{
+  padding: 60px 0 ;
+  background-color: #F2F2F2;
+  min-height: 100vh;
+  .head{
+      border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+      h2{
+          font-size: 45px;
+          color: $DarkBlueColor;
+      }
+  }
+  .modalActivity{
+      margin-bottom: 50px ;
+      .contentActivity{
+          h1{
+              text-align: center !important;
+              color:$DarkBlueColor;
+              font-family: "arabic";
+              font-size: 25px;
+          }
+          .headerActivity{
+              justify-content: flex-end;
+              border-bottom: 1px solid transparent !important;
+              i{
+                  color: $SecMainColor;
+                  font-size: 35px;
+                  cursor: pointer;
+              }
+          }
+          p{
+              text-align: center;
+              color: $DarkBlueColor;
+              font-family: "arabic";
+          }
+      }
+  }
+}
+}
+
+
+@media screen and (max-width: 767px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 55vh;
+    .head{
+      h2{
+          font-size: 30px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 50vh;
+    .head{
+      h2{
+          font-size: 40px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}
