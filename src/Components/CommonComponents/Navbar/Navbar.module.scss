@@ -1,0 +1,118 @@
+@import "../../../index.scss";
+
+.navy {
+  position: absolute;
+   z-index: 9999;
+  top: 50px;
+  left: 5%;
+  background-color: #fff;
+  width: 90%;
+  height: 80px;
+  padding: 0px 20px 15px;
+  margin: 0px auto 30px;
+  @include borderRadius(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .listItems {
+    font-family: "title" !important;
+    margin: 0 30px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: $DarkBlueColor;
+    span {
+      margin-right: 22px !important;
+      position: relative;
+      font-size: 17px;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $DarkBlueColor;
+        height: 26px;
+        width: 1.5px;
+        top: 0px;
+        right: -11px;
+      }
+    }
+    .last {
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        height: 23px;
+        width: 1.5px;
+        top: 0px;
+        right: -9px;
+      }
+    }
+  }
+}
+
+body[dir="rtl"] {
+  .navy {
+    position: absolute;
+    z-index: 9999;
+    top: 50px;
+    left: 5%;
+    background-color: #fff;
+    width: 90%;
+    height: 80px;
+    padding: 0px 20px 15px;
+    margin: 0px auto 30px;
+    @include borderRadius(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 11%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .listItems {
+      margin: 0 30px;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      color: $DarkBlueColor;
+      font-family: "arabic" !important;
+      span {
+        margin-right: 22px !important;
+        position: relative;
+        font-size: 19.2px;
+        font-weight: 500;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $DarkBlueColor;
+          height: 26px;
+          width: 1.5px;
+          top: 0px;
+          right: -11px;
+        }
+      }
+      .lasten {
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: transparent;
+          height: 23px;
+          width: 1.5px;
+          top: 0px;
+          right: -9px;
+        }
+      }
+    }
+  }
+}

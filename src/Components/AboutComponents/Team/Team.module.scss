@@ -1,0 +1,128 @@
+@import "../../../index.scss";
+
+
+.main{
+    padding: 60px 0 ;
+    background-color: #F2F2F2;
+    width: 100%;
+    min-height: 55vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+            font-family: "title";
+        }
+    }
+    .mainModal{
+        .modalBody{
+         --bs-modal-width: 75%;
+         .modalContent{
+                height: fit-content !important;
+            .modalInfo{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            .modalClosed{
+                color:$SecMainColor!important;
+                font-size: 35px;
+                cursor: pointer;
+            }
+            .modalPara{
+                color: $DarkBlueColor;
+                text-align: left;
+                h4{
+                    font-size: 30px;
+                    margin: 20px 0;
+                    font-family: "title";
+                }
+                span{
+                    font-size: 18px;
+                    font-family: "title";
+                }
+                p{
+                    font-family: "title";
+                    margin: 10px 0;
+
+                }
+            }
+            }
+            }
+         }
+    }  
+}
+
+
+
+body[dir='rtl']{
+    .main{
+        .head{
+            h2{
+                font-family: "arabic";
+            }
+        }
+        .mainModal{
+            .modalBody{
+             .modalContent{
+                .modalInfo{
+                .modalPara{
+                    text-align: right;
+                    h4{
+                        font-family: "arabic";
+                        font-size: 25px;
+                    }
+                    span{
+                        font-family: "arabic";
+                    }
+                    p{
+                        font-family: "arabic";
+    
+                    }
+                }
+                }
+                }
+             }
+        }  
+    }
+}
+
+
+
+
+@media screen and (max-width:767px){
+    .main{
+        padding: 0px 0 ;
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 70vh;
+        margin-top: 0px;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 30px;
+                color: $DarkBlueColor;
+            }
+        }
+    }
+    
+  }
+
+
+  @media screen and (min-width:768px) and (max-width:991px){
+    .main{
+        padding: 60px 0 ;
+        background-color: #F2F2F2;
+        width: 100%;
+        height: 65vh;
+        margin-top: 80px;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 40px;
+                color: $DarkBlueColor;
+            }
+        }
+       
+    
+    }
+  }

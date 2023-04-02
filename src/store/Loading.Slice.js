@@ -1,6 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
+
+
+
 export const getHomePage = createAsyncThunk(
   "home/getHomePage",
   async (_, thunkAPI) => {
@@ -9,7 +12,7 @@ export const getHomePage = createAsyncThunk(
       const { data } = await axios(
         `https://sehetna.ok-adv.com/api/pages/home`,
         {
-          headers: { "X-App-Locale": localStorage.getItem("lang") || "en" },
+          headers: { "X-App-Locale": localStorage.getItem("lang")  || "en" },
           // headers: { "X-App-Locale": "ar" }
         }
       );

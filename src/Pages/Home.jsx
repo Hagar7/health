@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import HomeAbout from "../Components/HomeAbout/HomeAbout";
-import HomeActivity from "../Components/HomeActivity/HomeActivity";
-import HomeFacts from "../Components/HomeFacts/HomeFacts";
-import HomeNews from "../Components/HomeNews/HomeNews";
-import HomeProject from "../Components/HomeProject/HomeProject";
-import Methology from "../Components/Methology/Methology";
-import Slider from "../Components/Slider/Slider";
+import HomeAbout from "../Components/HomeComponents/HomeAbout/HomeAbout";
+import HomeActivity from "../Components/HomeComponents/HomeActivity/HomeActivity";
+import HomeFacts from "../Components/HomeComponents/HomeFacts/HomeFacts";
+import HomeNews from "../Components/HomeComponents/HomeNews/HomeNews";
+import HomeProject from "../Components/HomeComponents/HomeProject/HomeProject";
+import Methology from "../Components/HomeComponents/Methology/Methology";
+import Slider from "../Components/HomeComponents/Slider/Slider";
 import { getHomePage } from "../store/Home.Slice";
 
 export default function Home() {

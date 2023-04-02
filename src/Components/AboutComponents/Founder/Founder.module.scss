@@ -1,0 +1,292 @@
+@import "../../../index.scss";
+
+.main{
+    padding: 60px 0 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    min-height: 100vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    .item{
+        .icon{
+            font-size: 80px;
+            color: $mainColor;
+        }
+        p{
+            font-family: "calibri";
+            color: $DarkBlueColor;
+            font-size: 20.8px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        h5{
+            font-family: "calibri";
+            color: $DarkBlueColor;
+            font-weight: 600;
+            margin: 30px 0 0;
+        }
+    }
+    .img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    margin-top: 200px;
+    img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: 25rem;
+    width: 25rem;
+    box-shadow: -7px 10px #f07851;
+    }
+    }
+    .iconBig{
+        text-align: center;
+        font-size: 80px;
+        color: $mainColor;
+    }
+    .iconsmall{
+        display: none;
+    }
+}
+
+.mediumMain{
+    display: none;
+}
+
+
+body[dir='rtl']{
+    .main{
+        .head{
+            h2{
+                font-family: "arabic";
+            }
+        }
+        .item{
+            p{
+                font-family: "arabic";
+                font-size: 20.8px;
+                text-align: right;
+            }
+            h5{
+                font-family: "arabic";
+                color: $DarkBlueColor;
+                font-weight: 600;
+                margin: 30px 0 0;
+            }
+        }
+    }  
+}
+
+@media screen and (max-width:767px){
+    .mediumMain{
+        display: block;
+        padding: 60px 0 0;
+        background-color: #F2F2F2;
+        min-height: 100vh;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 30px;
+                color: $DarkBlueColor;
+                text-align: center;
+            }
+        }
+        .item{
+            .icon{
+                font-size: 50px;
+                color: $mainColor;
+            }
+            p{
+                font-family: "calibri";
+                color: $DarkBlueColor;
+                font-size: 20.8px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+            h5{
+                font-family: "calibri";
+                color: $DarkBlueColor;
+                font-weight: 600;
+                margin: 30px 0 0;
+            }
+        }
+        .img{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3rem;
+        margin-top: 20px;
+        img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: 16rem;
+        width: 16rem;
+        box-shadow: -7px 10px #f07851;
+        }
+        }
+        .iconBig{
+            text-align: right;
+            font-size: 50px;
+            color: $mainColor;
+        }
+    }
+
+    .main{
+        display: none;
+       }
+
+    body[dir='rtl']{
+        .mediumMain{
+            .head{
+                h2{
+                    font-family: "arabic";
+                    font-size: 35px;
+                }
+            }
+            .item{
+                .icon{
+                    font-size: 40px;
+                    color: $mainColor;
+                }
+                p{
+                    font-family: "arabic";
+                    text-align: right;
+                }
+                h5{
+                    font-family: "arabic";
+                    color: $DarkBlueColor;
+                    font-weight: 600;
+                    margin: 30px 0 0;
+                }
+            }
+            .img{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 3rem;
+            margin-top: 20px;
+            img{
+            border-radius: 50%;
+            max-width: 100%;
+            height: 16rem;
+            width: 16rem;
+            box-shadow: -7px 10px #f07851;
+            }
+            }
+            .iconBig{
+                text-align: right;
+                font-size: 40px;
+                color: $mainColor;
+            }
+        }
+    }
+  }
+
+
+
+  @media screen and (min-width:768px) and (max-width:991px){
+    .mediumMain{
+        display: block;
+        padding: 60px 0 0;
+        background-color: #F2F2F2;
+        width: 100%;
+        min-height: 100vh;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 45px;
+                color: $DarkBlueColor;
+            }
+        }
+        .item{
+            .icon{
+                font-size: 50px;
+                color: $mainColor;
+            }
+            p{
+                font-family: "calibri";
+                color: $DarkBlueColor;
+                font-size: 20.8px;
+                text-align: left;
+                margin-bottom: 15px;
+            }
+            h5{
+                font-family: "calibri";
+                color: $DarkBlueColor;
+                font-weight: 600;
+                margin: 30px 0 0;
+            }
+        }
+        .img{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+        margin-top: 20px;
+        img{
+        border-radius: 50%;
+        max-width: 100%;
+        height: 25rem;
+        width: 25rem;
+        box-shadow: -7px 10px #f07851;
+        }
+        }
+        .iconBig{
+            text-align: right;
+            font-size: 50px;
+            color: $mainColor;
+        }
+    }
+    .main{
+     display: none;
+    }
+
+    body[dir='rtl']{
+        .mediumMain{
+    
+            .head{
+                h2{
+                    font-family: "arabic";
+                }
+            }
+            .item{
+                .icon{
+                    font-size: 50px;
+                    color: $mainColor;
+                }
+                p{
+                    font-family: "arabic";
+                 
+                    text-align: right;
+                }
+                h5{
+                    font-family: "arabic";
+                    color: $DarkBlueColor;
+                    font-weight: 600;
+                    margin: 30px 0 0;
+                }
+            }
+            .img{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5rem;
+            margin-top: 20px;
+            img{
+            border-radius: 50%;
+            max-width: 100%;
+            height: 25rem;
+            width: 25rem;
+            box-shadow: -7px 10px #f07851;
+            }
+            }
+            .iconBig{
+                text-align: right;
+                font-size: 50px;
+                color: $mainColor;
+            }
+        }  
+    }
+
+  }

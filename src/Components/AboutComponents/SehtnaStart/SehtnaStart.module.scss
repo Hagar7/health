@@ -1,0 +1,157 @@
+@import "../../../index.scss";
+
+
+.about{
+    min-height: 100vh;
+    padding: 60px 0 0;
+    // margin:0 auto;
+    h2{
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 55px;
+        color: $DarkBlueColor;
+        span{
+            color: $SecMainColor;
+        }
+    }
+    p{
+        font-size: 19.2px;
+        font-family: "calibri";
+        font-weight: 100;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $DarkBlueColor;
+    }
+    .aboutBtns{
+        text-align: center;
+        padding-bottom: 40px;
+        .one {
+            @include borderRadius(30px);
+            margin: 20px;
+            height: 60px;
+            width: 170px;
+            background-color: $DarkBlueColor;
+            border: 1px solid $DarkBlueColor;
+            @include transition();
+            &:hover {
+              transform: translate(0px, 10px);
+              -webkit-transform: translate(0px, 10px);
+              -moz-transform: translate(0px, 10px);
+              -ms-transform: translate(0px, 10px);
+              -o-transform: translate(0px, 10px);
+            }
+            i {
+              margin-left: 10px;
+              color: $SecMainColor;
+            }
+          }
+          .two {
+            @include borderRadius(30px);
+            height: 60px;
+            width: 170px;
+            background-color: $SecMainColor;
+            color: $textColor;
+            border: 1px solid $SecMainColor;
+            @include transition();
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+            -moz-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            &:hover {
+              transform: translate(0px, 10px);
+              -webkit-transform: translate(0px, 10px);
+              -moz-transform: translate(0px, 10px);
+              -ms-transform: translate(0px, 10px);
+              -o-transform: translate(0px, 10px);
+            }
+            i {
+              margin-left: 10px;
+            }
+        }
+    }
+}
+
+body[dir='rtl']{
+    .about{
+        font-family: "arabic";
+        h2{
+            font-family: "arabic";
+            font-size: 4rem;
+            span{
+                font-family: "arabic";;
+            }
+        }
+        p{
+            font-family: "arabic";
+            text-align: center;
+        }
+        .aboutBtns{
+            .one { 
+                font-family: "arabic";
+                letter-spacing: 1px; 
+                i {
+                  margin-right: 30px;  
+                  font-size: 14px;     
+                }
+              }
+              .two { 
+                font-family: "arabic";
+                letter-spacing: 1px; 
+            
+                i {
+                  margin-right: 30px;
+                  font-size: 14px;
+                }
+            }
+        }
+    }  
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .about{
+
+        h2{
+            font-size: 35px;
+            span{
+                color: $SecMainColor;
+            }
+        }
+
+        .aboutBtns{
+            display: flex;
+            text-align: center;
+            .one {
+                @include borderRadius(30px);
+                margin: 0px;
+                height: 50px;
+                width: 140px;
+                font-size: 12px;
+                margin:0 20px;
+                i {
+                  margin-left: 10px;
+                }
+              }
+              .two {
+                @include borderRadius(30px);
+                height: 50px;
+                width: 140px;
+                font-size: 12px;
+                i {
+                  margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}

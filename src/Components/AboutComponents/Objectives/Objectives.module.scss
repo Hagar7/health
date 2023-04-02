@@ -1,0 +1,304 @@
+@import "../../../index.scss";
+
+
+.main{
+    min-height: 100vh;
+    padding: 60px 0 ;
+    .pageContent{
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 45px;
+                color: $DarkBlueColor;
+            }
+        }
+        .img{
+           margin: 90px 0px;
+            img{
+                width: 450px;
+                height: 450px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              
+    }
+        }
+        .content{
+            padding: 50px 0;
+            color: $DarkBlueColor;
+            h3{
+                font-weight: 400;
+                font-size: 24px;
+            }
+            ul{
+                list-style-type: circle;
+                li{
+                    font-family: "calibri";
+                    font-size: 18px;
+                }
+            }
+            button{
+                border: 1px solid transparent !important;
+                background-color: transparent !important;
+                color: $SecMainColor;
+                text-decoration: underline;
+                font-size: 17px;
+                margin:0px 15px 10px;
+            }
+           
+        }
+        .mainModal{
+            .modalBody{
+             --bs-modal-width: 75%;
+             .modalContent{
+                height: fit-content !important;
+                .modalInfo{
+                    display: flex;
+                    justify-content: space-between;
+                .modalClosed{
+                    color:$SecMainColor!important;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+                .modalPara{
+                    color: $DarkBlueColor;
+                    text-align: left;
+                    p{
+                        font-family: "title";
+                        text-align: center;
+                        font-size: 30px;
+                        margin: 20px 0;
+                        color:$SecMainColor!important;
+                    }
+                }
+                }
+                }
+             }
+        }
+    }
+}
+
+
+
+
+
+body[dir='rtl']{
+    .main{
+.pageContent{
+    .head{
+        h2{
+            font-family: "arabic";
+        }
+    }
+    .content{
+        h3{
+            font-family: "arabic";
+            font-weight: 400;
+            font-size: 24px;
+        }
+        ul{
+            list-style-type: circle;
+            li{
+                font-family: "arabic";
+                font-size: 18px;
+            }
+        }
+        button{
+            font-family: "arabic";
+        }
+    }
+    .mainModal{
+        .modalBody{
+         .modalContent{
+            .modalInfo{
+            .modalPara{
+                text-align: right;
+                p{
+                    font-family: "arabic";
+                }
+                ul{
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    li{
+                        font-family: "arabic";
+                        margin-right: 15px;
+                    }
+                }
+            }
+            }
+            }
+         }
+    }
+}
+    }  
+}
+
+@media screen and (max-width: 767px) {
+    .main{
+        min-height: 100vh;
+        padding: 60px 0 ;
+     .pageContent{
+         .img{
+             text-align: center;
+            margin: 50px 0px;
+             img{
+                 width: 330px;
+                 height: 330px;        
+     }
+         }
+         .content{
+             padding: 30px 0;
+             h3{
+                 font-size: 20px;
+             }
+             ul{
+                 li{
+                     font-family: "calibri";
+                     font-size: 18px;
+                 }
+             }
+             button{
+           
+                 font-size: 19px;
+             }
+         }
+         .mainModal{
+             z-index: 5;
+             .modalBody{
+        
+              .modalContent{
+                 
+                 .modalInfo{
+                     display: flex;
+                     justify-content: space-between;
+                 .modalClosed{
+                     color:$SecMainColor!important;
+                     font-size: 35px;
+                     cursor: pointer;
+                     margin: 10px;
+                 }
+                 .modalPara{
+                     color: $DarkBlueColor;
+                     text-align: left;
+                     p{
+                         font-size: 25px;
+                         margin: 20px 0;
+                     }
+                 }
+                 }
+                 }
+              }
+         }
+     }
+    }
+
+
+    body[dir='rtl']{
+        .main{  
+            .pageContent{
+
+                .content{
+                    padding: 30px 0;
+                    h3{
+                        font-size: 20px;
+                        font-family: "arabic";
+                    }
+                    ul{
+                        margin-right: 10px;
+                        font-family: "arabic";
+                    }
+                    button{
+                        font-family: "arabic";
+                    }
+                }
+                .mainModal{
+                    .modalBody{
+                     .modalContent{
+                        .modalInfo{
+                        .modalPara{
+                            text-align: right;
+                            p{
+                                font-family: "arabic";
+                            }
+                            ul{
+                                width: 100%;
+                                li{
+                                    font-family: "arabic";
+                                    margin-right: 15px;
+                                }
+                            }
+                        }
+                        }
+                        }
+                     }
+                }
+            }   
+        }  
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main{
+        min-height: 100vh;
+        padding: 60px 0 ;
+     .pageContent{
+
+         .img{
+             text-align: center;
+            margin: 50px 0px;
+             img{
+                 width: 390px;
+                 height: 390px;        
+     }
+         }
+         .content{
+             padding: 30px 0;
+             h3{
+                 font-size: 20px;
+             }
+             ul{
+                 li{
+                     font-family: "calibri";
+                     font-size: 18px;
+                 }
+             }
+             button{
+           
+                 font-size: 19px;
+             }
+            
+         }
+         .mainModal{
+             .modalBody{
+              --bs-modal-width: 75%;
+              .modalContent{
+                 .modalInfo{
+                     display: flex;
+                     justify-content: space-between;
+                 .modalClosed{
+                     color:$SecMainColor!important;
+                     font-size: 35px;
+                     cursor: pointer;
+                     margin: 10px;
+                 }
+                 .modalPara{
+                     color: $DarkBlueColor;
+                     text-align: left;
+                     p{
+                         font-size: 30px;
+                         margin: 20px 0;
+                     }
+                     span{
+                         font-size: 16px;
+                        
+                     }
+                 }
+                 }
+                 }
+              }
+         }
+     }
+    }
+}

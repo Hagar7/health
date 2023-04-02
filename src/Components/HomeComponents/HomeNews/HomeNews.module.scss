@@ -1,0 +1,247 @@
+@import "../../../index.scss";
+
+.main {
+  min-height: 70vh;
+  padding: 60px 0 40px;
+  background-color: #f2f2f2;
+  .head {
+    border-bottom: 0.5px solid rgb(28, 71, 108, 0.2);
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 45px;
+      color: $DarkBlueColor;
+    }
+    .two {
+      @include borderRadius(30px);
+      height: 60px;
+      width: 180px;
+      margin: 0 20px 20px 0;
+      background-color: $textColor;
+      color: $DarkBlueColor;
+      border: 1px solid $textColor;
+      @include transition();
+      transform: translate(0px, 0px);
+      -webkit-transform: translate(0px, 0px);
+      -moz-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      -o-transform: translate(0px, 0px);
+      &:hover {
+        transform: translate(0px, 10px);
+        -webkit-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+      }
+      i {
+        margin-left: 10px;
+        color: $SecMainColor;
+      }
+    }
+  }
+  .item {
+    padding-top: 40px;
+    img {
+      width: 100%;
+      @include borderRadius(20px);
+    }
+    h6 {
+      margin: 20px 5px 5px;
+      font-weight: 500;
+      color: #a3b0bd;
+    }
+    h4 {
+      color: $DarkBlueColor;
+      font-weight: 600;
+    }
+    p {
+      color: $DarkBlueColor;
+      font-size: 16px;
+      font-family: "calibri";
+      line-height: 18px;
+    }
+  }
+  .divyflex {
+    display: none;
+  }
+}
+
+
+body[dir="rtl"] {
+    .main {
+        // font-family: "arabic";
+        .head {
+          h2 {
+            font-family: "arabic";
+          }
+          .two {
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+        .item {
+          padding-top: 40px;
+          h6 {
+            font-family: "arabic";
+          }
+          h4 {
+            font-weight: 700;
+            font-family: "arabic";
+            letter-spacing: 1px;
+          }
+          p {
+            font-size: 16px;
+            font-family: "arabic";
+            line-height: 19px;
+          }
+        }
+        .divyflex {
+          display: none;
+        }
+      }   
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .main {
+    min-height: 70vh;
+    padding: 60px 0 40px;
+    background-color: #f2f2f2;
+    .head {
+      border-bottom: 0.5px solid rgb(28, 71, 108, 0.2);
+      display: flex;
+      justify-content: center;
+      h2{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 30px;
+        }
+      .two {
+        display: none;
+      }
+    }
+    .divyflex {
+      display: block;
+      .btnflex {
+        @include borderRadius(30px);
+        margin: 20px 20px 20px 0;
+        height: 60px;
+        width: 180px;
+        color: $DarkBlueColor;
+        background-color: $textColor;
+        border: 1px solid $textColor;
+        @include transition();
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        font-size: 17px;
+        i {
+          color: $SecMainColor;
+        }
+        &:hover {
+          transform: translate(0px, 10px);
+          -webkit-transform: translate(0px, 10px);
+          -moz-transform: translate(0px, 10px);
+          -ms-transform: translate(0px, 10px);
+          -o-transform: translate(0px, 10px);
+        }
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  body[dir="rtl"] {
+    .main {
+        .head { 
+          .two {
+            display: none;
+          }
+        }
+        .divyflex {
+          display: block;
+          .btnflex {
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      } 
+  }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main {
+    min-height: 70vh;
+    padding: 60px 0 40px;
+    background-color: #f2f2f2;
+    .head {
+      border-bottom: 0.5px solid rgb(28, 71, 108, 0.2);
+      display: flex;
+      justify-content: center;
+      h2{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 40px;
+        }
+      .two {
+        display: none;
+      }
+    }
+    .divyflex {
+      display: block;
+      .btnflex {
+        @include borderRadius(30px);
+        margin: 20px 20px 20px 0;
+        height: 60px;
+        width: 180px;
+        color: $DarkBlueColor;
+        background-color: $textColor;
+        border: 1px solid $textColor;
+        @include transition();
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        font-size: 17px;
+        i {
+          color: $SecMainColor;
+        }
+        &:hover {
+          transform: translate(0px, 10px);
+          -webkit-transform: translate(0px, 10px);
+          -moz-transform: translate(0px, 10px);
+          -ms-transform: translate(0px, 10px);
+          -o-transform: translate(0px, 10px);
+        }
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  body[dir="rtl"]{
+    .main {
+        .head {
+          .two {
+            display: none;
+          }
+        }
+        .divyflex {
+          display: block;
+          .btnflex {
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      } 
+  }
+}

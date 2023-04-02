@@ -34,6 +34,10 @@
     "newsBtn":"View all news",
     "latestPro":"LATEST PROJECT",
     "projectBtn":"View all projects",
-    "factsTitle":"FACTS & FIGURES"
-
+    "factsTitle":"FACTS & FIGURES",
+    "how":"How",
+    "start":"STARTED",
+    "objectives":"OBJECTIVES",
+    "partner":"PARTNERS",
+    "board":"BOARD OF TRUSTEES"
 }

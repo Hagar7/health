@@ -1,0 +1,150 @@
+@import "../../../index.scss";
+
+body[dir='ltr']{
+
+  .main{
+      padding: 60px 0 ;
+      background-color: #F2F2F2;
+      min-height: 100vh;
+      .head{
+          border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+          h2{
+              font-size: 45px;
+              color: $DarkBlueColor;
+          }
+      }
+    
+      .modalActivity{
+          margin-bottom: 50px ;
+          .contentActivity{
+            height: fit-content !important;
+              h1{
+                  text-align: center !important;
+                  color:$DarkBlueColor;
+                  font-family: "title";
+                  font-size: 25px;
+              }
+              .headerActivity{
+                  justify-content: flex-end;
+                  border-bottom: 1px solid transparent !important;
+                  i{
+                      color: $SecMainColor;
+                      font-size: 35px;
+                      cursor: pointer;
+                  }
+              }
+              p{
+                  text-align: center;
+                  color: $DarkBlueColor;
+                  font-family: "title";
+              }
+          }
+      }
+  }
+}
+
+body[dir='rtl']{
+.main{
+  padding: 60px 0 ;
+  background-color: #F2F2F2;
+  min-height: 100vh;
+  font-family: "arabic";
+  .head{
+      border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+      h2{
+          font-size: 45px;
+          color: $DarkBlueColor;
+      }
+  }
+  .modalActivity{
+    font-family: "arabic" !important;
+      margin-bottom: 50px ;
+      .contentActivity{
+          h1{
+              text-align: center !important;
+              color:$DarkBlueColor;
+              font-family: "arabic";
+              font-size: 25px;
+          }
+          .headerActivity{
+              justify-content: flex-end;
+              border-bottom: 1px solid transparent !important;
+              i{
+                  color: $SecMainColor;
+                  font-size: 35px;
+                  cursor: pointer;
+              }
+          }
+          h1{
+            font-family: "arabic" !important;
+          }
+          p{
+              text-align: center;
+              color: $DarkBlueColor;
+              font-family: "arabic" !important;
+          }
+      }
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 55vh;
+    .head{
+      h2{
+          font-size: 30px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 50vh;
+    .head{
+      h2{
+          font-size: 40px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}

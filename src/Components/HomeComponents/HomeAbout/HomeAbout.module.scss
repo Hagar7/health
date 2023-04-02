@@ -1,0 +1,660 @@
+@import "../../../index.scss";
+
+.mainAbout {
+  min-height: 80vh;
+  padding-top: 70px;
+  .outter {
+    background: #f8f8f8;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    transform: translate(200px, 0px);
+    -webkit-transform: translate(200px, 0px);
+    -moz-transform: translate(200px, 0px);
+    -ms-transform: translate(200px, 0px);
+    -o-transform: translate(200px, 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img {
+      background: #f1f1f1;
+      min-height: 90%;
+      min-width: 90%;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      img {
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  .info {
+    .title {
+      transform: translate(0px, 130px);
+      -webkit-transform: translate(0px, 130px);
+      -moz-transform: translate(0px, 130px);
+      -ms-transform: translate(0px, 130px);
+      -o-transform: translate(0px, 130px);
+      h3 {
+        color: $DarkBlueColor;
+        font-size: 44px;
+        span {
+          color: $SecMainColor;
+        }
+      }
+    }
+    .btnsflex {
+      display: flex;
+      align-items: center;
+      .btns {
+        transform: translate(0px, 150px);
+        -webkit-transform: translate(0px, 150px);
+        -moz-transform: translate(0px, 150px);
+        -ms-transform: translate(0px, 150px);
+        -o-transform: translate(0px, 150px);
+
+        .one {
+          @include borderRadius(30px);
+          margin: 0 20px 20px 0;
+          height: 60px;
+          width: 180px;
+          background-color: $DarkBlueColor;
+          border: 1px solid $DarkBlueColor;
+          @include transition();
+          transform: translate(0px, 0px);
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          i {
+            color: $SecMainColor;
+          }
+          &:hover {
+            transform: translate(0px, 10px);
+            -webkit-transform: translate(0px, 10px);
+            -moz-transform: translate(0px, 10px);
+            -ms-transform: translate(0px, 10px);
+            -o-transform: translate(0px, 10px);
+          }
+          i {
+            margin-left: 5px;
+          }
+        }
+        .two {
+          @include borderRadius(30px);
+          height: 60px;
+          width: 180px;
+          margin: 0 20px 20px 0;
+          background-color: $textColor;
+          color: $SecMainColor;
+          border: 1px solid $DarkBlueColor;
+          @include transition();
+          transform: translate(0px, 0px);
+          -webkit-transform: translate(0px, 0px);
+          -moz-transform: translate(0px, 0px);
+          -ms-transform: translate(0px, 0px);
+          -o-transform: translate(0px, 0px);
+          &:hover {
+            transform: translate(0px, 10px);
+            -webkit-transform: translate(0px, 10px);
+            -moz-transform: translate(0px, 10px);
+            -ms-transform: translate(0px, 10px);
+            -o-transform: translate(0px, 10px);
+          }
+          i {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .aboutModal {
+    background-color: red !important;
+    .modalContent {
+      background-color: transparent;
+      border: 1px solid transparent !important;
+      .modalHeader {
+        border-bottom: 1px solid transparent !important;
+        .btnClose {
+          color: $SecMainColor;
+          box-sizing: content-box;
+          width: 1em;
+          height: 1em;
+          padding: 0.25em 0.25em;
+          border: 0;
+          border-radius: 0.375rem;
+          opacity: 0.5;
+          margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+            calc(-0.5 * var(--bs-modal-header-padding-x))
+            calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+          font-size: 30px;
+          cursor: pointer;
+        }
+      }
+      video {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+body[dir="rtl"] {
+  .mainAbout {
+    min-height: 80vh;
+    padding-top: 70px;
+    .outter {
+      background: #f8f8f8;
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      transform: translate(-170px, 0px);
+      -webkit-transform: translate(-170px, 0px);
+      -moz-transform: translate(-170px, 0px);
+      -ms-transform: translate(-170px, 0px);
+      -o-transform: translate(-170px, 0px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        background: #f1f1f1;
+        min-height: 90%;
+        min-width: 90%;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+    .info {
+      .title {
+        transform: translate(0px, 50px);
+        -webkit-transform: translate(0px, 50px);
+        -moz-transform: translate(0px, 50px);
+        -ms-transform: translate(0px, 50px);
+        -o-transform: translate(0px, 50px);
+        font-family: "arabic";
+        h3 {
+          color: $DarkBlueColor;
+          font-size: 44px;
+          span {
+            color: $SecMainColor;
+          }
+        }
+        p {
+          color: $DarkBlueColor;
+          width: 500px;
+        }
+      }
+      .btnsflex {
+        display: flex;
+        align-items: center;
+        .btns {
+          transform: translate(0px, 80px);
+          -webkit-transform: translate(0px, 80px);
+          -moz-transform: translate(0px, 80px);
+          -ms-transform: translate(0px, 80px);
+          -o-transform: translate(0px, 80px);
+          .one {
+            @include borderRadius(30px);
+            margin: 0 0px 20px 20px;
+            height: 60px;
+            width: 180px;
+            background-color: $DarkBlueColor;
+            border: 1px solid $DarkBlueColor;
+            @include transition();
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+            -moz-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            i {
+              color: $SecMainColor;
+            }
+            &:hover {
+              transform: translate(0px, 10px);
+              -webkit-transform: translate(0px, 10px);
+              -moz-transform: translate(0px, 10px);
+              -ms-transform: translate(0px, 10px);
+              -o-transform: translate(0px, 10px);
+            }
+            i {
+              margin-right: 10px;
+            }
+          }
+          .two {
+            @include borderRadius(30px);
+            height: 60px;
+            width: 180px;
+            margin: 0 0px 20px 20px;
+            background-color: $textColor;
+            color: $SecMainColor;
+            border: 1px solid $DarkBlueColor;
+            @include transition();
+            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+            -moz-transform: translate(0px, 0px);
+            -ms-transform: translate(0px, 0px);
+            -o-transform: translate(0px, 0px);
+            &:hover {
+              transform: translate(0px, 10px);
+              -webkit-transform: translate(0px, 10px);
+              -moz-transform: translate(0px, 10px);
+              -ms-transform: translate(0px, 10px);
+              -o-transform: translate(0px, 10px);
+            }
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .aboutModal {
+      background-color: red !important;
+      .modalContent {
+        background-color: transparent;
+        border: 1px solid transparent !important;
+        .modalHeader {
+          border-bottom: 1px solid transparent !important;
+          .btnClose {
+            color: $SecMainColor;
+            box-sizing: content-box;
+            width: 1em;
+            height: 1em;
+            padding: 0.25em 0.25em;
+            border: 0;
+            border-radius: 0.375rem;
+            opacity: 0.5;
+            margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+              calc(-0.5 * var(--bs-modal-header-padding-x))
+              calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+        .myvide {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainAbout {
+    min-height: 80vh;
+    padding-top: 30px;
+    .outter {
+      transform: translate(10px, 0px);
+      -webkit-transform: translate(10px, 0px);
+      -moz-transform: translate(10px, 0px);
+      -ms-transform: translate(10px, 0px);
+      -o-transform: translate(10px, 0px);
+      width: 20rem;
+      height: 20rem;
+    }
+    .info {
+      .title {
+        transform: translate(10px, 30px);
+        -webkit-transform: translate(10px, 30px);
+        -moz-transform: translate(10px, 30px);
+        -ms-transform: translate(10px, 30px);
+        -o-transform: translate(10px, 30px);
+      }
+      .btnsflex {
+        align-items: center;
+        justify-content: center;
+        .btns {
+          transform: translate(0px, 50px);
+          -webkit-transform: translate(0px, 50px);
+          -moz-transform: translate(0px, 50px);
+          -ms-transform: translate(0px, 50px);
+          -o-transform: translate(0px, 50px);
+          display: flex;
+          .one {
+            height: 45px;
+            width: 150px;
+            margin: 0 5px 20px 0;
+          }
+          .two {
+            margin: 0 5px 20px 5px;
+            height: 45px;
+            width: 150px;
+          }
+        }
+      }
+    }
+    .aboutModal {
+      background-color: red !important;
+      .modalContent {
+        background-color: transparent;
+        border: 1px solid transparent !important;
+        .modalHeader {
+          border-bottom: 1px solid transparent !important;
+          .btnClose {
+            color: $SecMainColor;
+            box-sizing: content-box;
+            width: 1em;
+            height: 1em;
+            padding: 0.25em 0.25em;
+            border: 0;
+            border-radius: 0.375rem;
+            opacity: 0.5;
+            margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+              calc(-0.5 * var(--bs-modal-header-padding-x))
+              calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+        .myvide {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  body[dir="rtl"] {
+    .mainAbout {
+      min-height: 100vh;
+      padding-top: 0px;
+      .outter {
+        background: #f8f8f8;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img {
+          background: #f1f1f1;
+          min-height: 90%;
+          min-width: 90%;
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            position: absolute;
+            width: 100%;
+          }
+        }
+      }
+      .info {
+        .title {
+          text-align: center;
+          transform: translate(0px, 40px);
+          -webkit-transform: translate(0px, 40px);
+          -moz-transform: translate(0px, 40px);
+          -ms-transform: translate(0px, 40px);
+          -o-transform: translate(0px, 40px);
+          font-family: "arabic";
+          h3 {
+            color: $DarkBlueColor;
+            font-size: 44px;
+            span {
+              color: $SecMainColor;
+            }
+          }
+          p {
+            color: $DarkBlueColor;
+            width: 340px;
+          }
+        }
+        .btnsflex {
+          align-items: center;
+          justify-content: center;
+          .btns {
+            transform: translate(0px, 80px);
+            -webkit-transform: translate(0px, 80px);
+            -moz-transform: translate(0px, 80px);
+            -ms-transform: translate(0px, 80px);
+            -o-transform: translate(0px, 80px);
+            .one {
+              height: 45px;
+              width: 150px;
+              margin: 0 0px 20px 5px;
+            }
+            .two {
+              height: 45px;
+              width: 150px;
+              margin: 0 5px 20px 5px;
+            }
+          }
+        }
+      }
+      .aboutModal {
+        background-color: red !important;
+        .modalContent {
+          background-color: transparent;
+          border: 1px solid transparent !important;
+          .modalHeader {
+            border-bottom: 1px solid transparent !important;
+            .btnClose {
+              color: $SecMainColor;
+              box-sizing: content-box;
+              width: 1em;
+              height: 1em;
+              padding: 0.25em 0.25em;
+              border: 0;
+              border-radius: 0.375rem;
+              opacity: 0.5;
+              margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+                calc(-0.5 * var(--bs-modal-header-padding-x))
+                calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+              font-size: 30px;
+              cursor: pointer;
+            }
+          }
+          .myvide {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mainAbout {
+    min-height: 80vh;
+    padding-top: 30px;
+    .outter {
+      transform: translate(140px, 0px);
+      -webkit-transform: translate(140px, 0px);
+      -moz-transform: translate(140px, 0px);
+      -ms-transform: translate(140px, 0px);
+      -o-transform: translate(140px, 0px);
+      width: 28rem;
+      height: 28rem;
+    }
+    .info {
+      .title {
+        text-align: center;
+        transform: translate(0px, 60px);
+        -webkit-transform: translate(0px, 60px);
+        -moz-transform: translate(0px, 60px);
+        -ms-transform: translate(0px, 60px);
+        -o-transform: translate(0px, 60px);
+      }
+      .btnsflex {
+        align-items: center;
+        justify-content: center;
+        .btns {
+          transform: translate(0px, 100px);
+          -webkit-transform: translate(0px, 100px);
+          -moz-transform: translate(0px, 100px);
+          -ms-transform: translate(0px, 100px);
+          -o-transform: translate(0px, 100px);
+          display: flex;
+          .one {
+            height: 45px;
+            width: 150px;
+            margin: 0 5px 20px 0;
+          }
+          .two {
+            margin: 0 5px 20px 5px;
+            height: 45px;
+            width: 150px;
+          }
+        }
+      }
+    }
+    .aboutModal {
+      background-color: red !important;
+      .modalContent {
+        background-color: transparent;
+        border: 1px solid transparent !important;
+        .modalHeader {
+          border-bottom: 1px solid transparent !important;
+          .btnClose {
+            color: $SecMainColor;
+            box-sizing: content-box;
+            width: 1em;
+            height: 1em;
+            padding: 0.25em 0.25em;
+            border: 0;
+            border-radius: 0.375rem;
+            opacity: 0.5;
+            margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+              calc(-0.5 * var(--bs-modal-header-padding-x))
+              calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+        .myvide {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  body[dir="rtl"] {
+    .mainAbout {
+      min-height: 100vh;
+      padding-top: 30px;
+      .outter {
+        background: #f8f8f8;
+        width: 28rem;
+        height: 28rem;
+        border-radius: 50%;
+        transform: translate(-140px, 0px);
+        -webkit-transform: translate(-140px, 0px);
+        -moz-transform: translate(-140px, 0px);
+        -ms-transform: translate(-140px, 0px);
+        -o-transform: translate(-140px, 0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .img {
+          background: #f1f1f1;
+          min-height: 90%;
+          min-width: 90%;
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          img {
+            position: absolute;
+            width: 100%;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          text-align: center;
+          transform: translate(0px, 40px);
+          -webkit-transform: translate(0px, 40px);
+          -moz-transform: translate(0px, 40px);
+          -ms-transform: translate(0px, 40px);
+          -o-transform: translate(0px, 40px);
+          font-family: "arabic";
+          h3 {
+            color: $DarkBlueColor;
+            font-size: 44px;
+            margin-bottom: 15px;
+            span {
+              color: $SecMainColor;
+            }
+          }
+          p {
+            color: $DarkBlueColor;
+            width: 540px;
+          }
+        }
+        .btnsflex {
+          align-items: center;
+          justify-content: center;
+          .btns {
+            transform: translate(0px, 80px);
+            -webkit-transform: translate(0px, 80px);
+            -moz-transform: translate(0px, 80px);
+            -ms-transform: translate(0px, 80px);
+            -o-transform: translate(0px, 80px);
+            .one {
+              height: 45px;
+              width: 150px;
+              margin: 0 0px 20px 5px;
+            }
+            .two {
+              height: 45px;
+              width: 150px;
+              margin: 0 5px 20px 5px;
+            }
+          }
+        }
+      }
+      .aboutModal {
+        background-color: red !important;
+        .modalContent {
+          background-color: transparent;
+          border: 1px solid transparent !important;
+          .modalHeader {
+            border-bottom: 1px solid transparent !important;
+            .btnClose {
+              color: $SecMainColor;
+              box-sizing: content-box;
+              width: 1em;
+              height: 1em;
+              padding: 0.25em 0.25em;
+              border: 0;
+              border-radius: 0.375rem;
+              opacity: 0.5;
+              margin: calc(-0.5 * var(--bs-modal-header-padding-y))
+                calc(-0.5 * var(--bs-modal-header-padding-x))
+                calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
+              font-size: 30px;
+              cursor: pointer;
+            }
+          }
+          .myvide {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

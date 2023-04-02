@@ -1,0 +1,238 @@
+@import "../../../index.scss";
+
+
+.mission{
+    min-height: 100vh;
+    padding: 60px 0 0;
+    .content{
+    min-height: 70vh;
+    background: radial-gradient(circle,#f28863 0,#eb633f 84%);
+   @include borderRadius(20px);
+   text-align: center;
+   color: $textColor;
+   .item1{
+    position: relative;
+    padding: 40px 50px;
+    .test{
+        position: absolute;
+        background-color: #e4c2b7;
+        width: 1px;
+        height: 300px;
+        top:12%;
+        right:10px;
+        &:not(:last-child) {
+            background-color: transparent;
+          }
+    }
+   img{
+    width:13%;
+    color: #eee;
+    margin: 5px 0 15px;
+   }
+   h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+   }
+   .brdr{
+    border: 1px solid #eeeeee;
+    width: 25%;
+    margin: auto;
+   }
+   p{
+    margin: 40px 0px 10px;
+    font-size: 19.2px;
+    font-family: "calibri";
+    text-align: left;
+   }
+   button{
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+    color: #eee;
+    text-decoration: underline;
+    font-size: 17px;
+   }
+   
+   }
+
+   .mainModal{
+    .modalBody{
+     color: red;
+     --bs-modal-width: 75%;
+     .modalContent{
+            height: fit-content !important;
+        .modalInfo{
+            display: flex;
+            justify-content: space-between;
+        .modalClosed{
+            color:$SecMainColor!important;
+            font-size: 35px;
+            cursor: pointer;
+        }
+        .modalPara{
+            color: $DarkBlueColor;
+            text-align: left;
+            padding: 15px;
+            p{
+                font-size: 30px;
+                margin: 10px 0 0;
+            }
+            span{
+                font-size: 15px;
+               
+            }
+        }
+        }
+        }
+     }
+}
+    }
+    
+}
+
+
+body[dir='rtl']{
+    .mission{
+ 
+        .content{
+       .item1{
+        .test1{
+            position: absolute;
+            background-color: #e4c2b7;
+            width: 1px;
+            height: 300px;
+            top:12%;
+            left:10px;
+            &:not(:last-child) {
+                background-color: transparent;
+              }
+        }
+       h3{
+        font-family: "arabic";
+       }
+       .brdr{
+        border: 1px solid #eeeeee;
+        width: 25%;
+        margin: auto;
+       }
+       p{
+        font-family: "arabic";
+        text-align: right;
+       }       
+       }
+       .mainModal{
+        .modalBody{
+         .modalContent{
+            .modalInfo{
+            .modalPara{
+                text-align: right;
+                p{
+                    font-family: "arabic";
+                }
+                span{
+                    font-family: "arabic";                   
+                }
+            }
+            }
+            }
+         }
+    }
+        }
+        
+    }  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    .mission{
+        min-height: 100vh;
+        padding: 60px 0 40px;
+        .content{
+            .item1{
+                position: relative;
+                padding: 40px 50px;
+                .test{
+                    position: absolute;
+                    background-color: #e4c2b7;
+                    width: 50%;
+                    height: 2px;
+                    top:3%;
+                    right:80px;
+                      &:not(:last-child) {
+                        background-color: #e4c2b7 !important;
+                      }
+                      &:not(:first-child){
+                        background-color: transparent !important;
+                      }
+                }
+               }
+               .mainModal{
+                .modalBody{
+                 .modalContent{
+                    .modalInfo{
+                    .modalPara{
+                        color: $DarkBlueColor;
+                        text-align: left;
+                        padding: 0px;
+                        
+                        p{
+                            font-size: 20px;
+                            margin: 10px 0;
+                            font-weight: 600;
+                        }
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                    }
+                    }
+                 }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+     .mission{
+        min-height: 100vh;
+        padding: 60px 0 40px;
+        .content{
+            .item1{
+                position: relative;
+                padding: 40px 50px;
+                ::after{
+                 background-color: transparent;
+                }
+               }
+               .mainModal{
+                .modalBody{
+                 .modalContent{
+                    .modalInfo{
+                    .modalPara{
+                        color: $DarkBlueColor;
+                        text-align: left;
+                        padding: 15px;
+                        
+                        p{
+                            font-size: 20px;
+                            margin: 20px 0;
+                            font-weight: 600;
+                        }
+                        span{
+                            font-size: 20px;
+                        }
+                    }
+                    }
+                    }
+                 }
+            }
+        }
+    }
+}
