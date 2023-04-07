@@ -1,0 +1,190 @@
+@import "../../../index.scss";
+
+.main{
+    padding: 50px 0 ;
+    width: 100%;
+    min-height: 40vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    p{
+        font-style: italic;
+        font-family: "calibri";
+        color: $DarkBlueColor;
+        font-size: 28px;
+        padding: 20px 0 0;
+    }
+    .card{
+        position: relative;
+        img{
+            width: 85%;
+            @include borderRadius(30px);
+          }
+          .overlay{
+              position: absolute;
+              background-color: rgb(28, 71, 108, 0.5);
+              height: 100%;
+              width: 85%;
+              top:0;
+              left: 0;
+              @include borderRadius(30px);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              .one {
+                @include borderRadius(30px);
+                margin: 20px;
+                height: 50px;
+                width: 150px;
+                background-color: $SecMainColor;
+                border: 1px solid $SecMainColor;
+                @include transition();
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                  transform: translate(0px, 10px);
+                  -webkit-transform: translate(0px, 10px);
+                  -moz-transform: translate(0px, 10px);
+                  -ms-transform: translate(0px, 10px);
+                  -o-transform: translate(0px, 10px);
+                }
+                i {
+                  margin-left: 10px;
+                }
+              }
+              h4{
+                color: #eee;
+                padding: 0 20px;
+                text-align: center;
+              }
+          }
+    }
+}
+
+
+body[dir="rtl"] {
+  .main{
+    padding: 50px 0 ;
+    width: 100%;
+    min-height: 40vh;
+    .head{
+        h2{
+          font-family: "arabic";
+        }
+    }
+    p{
+        font-style: italic;
+        font-family: "arabic";
+        font-weight: 500;
+        padding: 20px 0 ;
+    }
+    .card{
+      position: relative;
+      width: 85% !important;
+      img{
+          width: 100% !important;
+          @include borderRadius(30px);
+        }
+        .overlay{
+            width: 100% !important;
+            .one {
+              font-family: "arabic";
+              i {
+                margin-right: 10px;
+              }
+            }
+            h4{
+              color: #eee;
+              padding: 0 20px;
+              text-align: center;
+              font-family: "arabic";
+              letter-spacing: 0.3px;
+            }
+        }
+  }
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+    .main{
+        min-height: 50vh;
+        padding: 30px 0 ;
+        .card{
+            margin-bottom: 20px;
+            img{
+              width: 100%;
+              @include borderRadius(30px);
+            }
+            .overlay{
+              width: 100%;
+            }
+          }
+    }
+
+    body[dir="rtl"] {
+      .main{
+        .card{
+          width: 100% !important;
+      }
+    }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main{
+        min-height: 30vh;
+        padding: 30px 0 ;
+        .card{
+            margin-bottom: 30px;
+            img{
+              width: 100%;
+              @include borderRadius(30px);
+            }
+            .overlay{
+              width: 100%;
+              .one {
+                height: 70px;
+                width: 170px;
+                font-size: 20px;
+              }
+              h4{
+                margin: 20px;
+                font-size: 24px;
+              }
+            }
+          }
+    }
+    body[dir="rtl"] {
+      .main{
+        .card{
+          width: 100% !important;
+          .overlay{
+            .one {
+              font-family: "arabic";             
+            }
+            h4{
+              color: #eee;
+              padding: 0 20px;
+              text-align: center;
+              font-family: "arabic";
+              letter-spacing: 0.3px;
+              font-size: 32px;
+            }
+        }
+      }
+    }
+  }
+}

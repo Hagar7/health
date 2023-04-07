@@ -1,0 +1,138 @@
+@import "../../../index.scss";
+
+.main{
+    padding: 50px 0 ;
+    width: 100%;
+    min-height: 60vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    .info{
+        padding-top: 70px;
+        span{
+         font-family: "calibri";
+         color: $DarkBlueColor;
+         font-weight: 600;
+       
+         }
+        p{
+            margin: 10px 0;
+            font-family: "calibri";
+            line-height: 20px;
+        }
+    }
+
+}
+
+
+body[dir="rtl"] {
+    .main{
+        min-height: 60vh;
+        .head{
+            h2{
+                font-family: "arabic";
+            }
+        }
+        .info{
+            padding-top: 70px;
+            span{
+                font-family: "arabic";
+                letter-spacing: 1px;
+           
+             }
+            p{
+                font-family: "arabic";
+                line-height: 31px;
+                font-weight: 400;
+                font-size: 21px;
+                color: $DarkBlueColor;
+            }
+            h4{
+                font-family: "arabic"; 
+                color: $DarkBlueColor;
+                font-style: italic;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+        }
+    
+    }   
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  
+    .main{
+        padding: 40px 0 ;
+        min-height: 60vh;
+        .head {
+            text-align: center;
+            h2 {
+              font-size: 35px;
+
+            }
+        }
+        .info{
+            padding-top: 30px !important;
+            span{
+                font-family: "title";        
+                color: $DarkBlueColor;
+             font-weight: 700;
+           
+             }
+            p{
+                margin: 10px 0;
+                font-family: "calibri";
+                line-height: 20px;
+            }
+        }
+    
+    }
+    
+    body[dir="rtl"]{
+        .main{
+            .head{
+                h2{
+                    font-family: "arabic";
+                }
+            }
+            .info{
+                padding-top: 30px !important;
+                span{
+                    font-family: "arabic";
+                    letter-spacing: 1px;
+               
+                 }
+                p{
+                    font-family: "arabic";
+                    line-height: 31px;
+                    font-weight: 400;
+                    font-size: 21px;
+                    color: $DarkBlueColor;
+                }
+                h4{
+                    font-family: "arabic"; 
+                    color: $DarkBlueColor;
+                    font-style: italic;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                }
+            }
+        
+        } 
+   
+
+
+
+    }
+}
+  
+  

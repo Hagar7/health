@@ -39,5 +39,8 @@
     "start":"STARTED",
     "objectives":"OBJECTIVES",
     "partner":"PARTNERS",
-    "board":"BOARD OF TRUSTEES"
+    "board":"BOARD OF TRUSTEES",
+    "news":"NEWS",
+    "fitness":"NUTRITION, MINDFULNESS & FITNESS",
+    "ngo":"THE NGO"
 }

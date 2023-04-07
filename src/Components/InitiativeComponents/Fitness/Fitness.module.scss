@@ -1,0 +1,239 @@
+
+@import "../../../index.scss";
+
+
+.main{
+    padding: 0px 0 ;
+    width: 100%;
+    min-height: 100vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        h2{
+            font-size: 45px;
+            color: $DarkBlueColor;
+        }
+    }
+    .largeScreen{
+        .test{
+            .item{
+                h3{
+                    margin: 20px 0 0px;
+                    color: $DarkBlueColor;
+                    font-family: "title";
+                    font-size: 40px;
+                }
+                p{
+                    font-family: "calibri";
+                    color: $DarkBlueColor;
+                    font-size: 21px;
+                    width: 70%;
+                    line-height: 24px;
+                }
+            }
+        }
+        .img{
+            margin: 60px 0 0px;
+            img{
+                width: 47%;
+            }
+        }
+    }
+    .smallScreen{
+        display: none;
+    }
+}
+
+body[dir="rtl"] {
+    .main{
+
+        .head{
+            h2{
+                font-family: "arabic";
+            }
+        }
+        .largeScreen{
+            .test{
+                .item{
+                    h3{
+                        font-family: "arabic";
+                        margin-bottom: 7px;
+                    }
+                    p{
+                        font-family: "arabic";
+                    }
+                }
+            }
+        }
+        .smallScreen{
+            display: none;
+        }
+    }  
+}
+
+
+
+@media screen and (max-width:767px){
+    .main{
+        padding: 0px 0 ;
+       
+        width: 100%;
+        min-height: 100vh;
+        margin-top: 0px;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 20px;
+                color: $DarkBlueColor;
+                text-align: center;
+            }
+        }
+        .smallScreen{
+            display: block;
+            .test{
+                .item{
+                    h3{
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 21px;
+                        width: 100%;
+                    }
+                }
+            }
+            .img{
+                text-align: center;
+                margin-top: 60px;
+                img{
+                    width: 47%;
+                }
+            }
+        }
+
+        .largeScreen{
+            display: none;
+        }
+    }
+    body[dir="rtl"] {
+        .main{
+            padding: 0px 0 ;
+           
+            width: 100%;
+            min-height: 100vh;
+            margin-top: 0px;
+            .head{
+                h2{
+                    text-align: center;
+                }
+            }
+            .smallScreen{
+                display: block;
+                .test{
+                    .item{
+                        h3{
+                            font-size: 35px;
+                            text-align: center;
+                        }
+                        p{
+                            font-size: 21px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .img{
+                    text-align: center;
+                    margin-top: 60px;
+                    img{
+                        width: 47%;
+                    }
+                }
+            }
+    
+            .largeScreen{
+                display: none;
+            }
+        }  
+    }
+  }
+
+
+  @media screen and (min-width:768px) and (max-width:991px){
+    .main{
+        padding: 60px 0 ;
+        width: 100%;
+        min-height: 65vh;
+        .head{
+            h2{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        .smallScreen{
+            display: block;
+            .test{
+                .item{
+                    h3{
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 21px;
+                        width: 100%;
+                    }
+                }
+            }
+            .img{
+                text-align: center;
+                margin-top: 60px;
+                img{
+                    width: 47%;
+                }
+            }
+        }
+
+        .largeScreen{
+            display: none;
+        }
+    
+    }
+    body[dir="rtl"] {
+        .main{
+            padding: 60px 0 ;
+            width: 100%;
+            min-height: 65vh;
+            .head{
+                h2{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            .smallScreen{
+                display: block;
+                .test{
+                    .item{
+                        h3{
+                            font-size: 35px;
+                            text-align: center;
+                        }
+                        p{
+                            font-size: 21px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .img{
+                    text-align: center;
+                    margin-top: 60px;
+                    img{
+                        width: 47%;
+                    }
+                }
+            }
+    
+            .largeScreen{
+                display: none;
+            }
+        
+        }
+    }
+  }

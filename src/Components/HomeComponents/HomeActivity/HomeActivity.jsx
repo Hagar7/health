@@ -6,7 +6,7 @@ import style from "./HomeActivity.module.scss";
 import "./HomeActivity.css";
 import { useTranslation } from "react-i18next";
 
-export default function HomeActivity({ activites }) {
+export default function HomeActivity({activites}) {
   const [t, i18n] = useTranslation();
 
   let [mytitle, setInfo] = useState({
@@ -28,7 +28,6 @@ export default function HomeActivity({ activites }) {
         <div className="shapeTwo">
           <Swiper
             modules={[Navigation, Pagination]}
-            // spaceBetween={40}
             navigation
             pagination={{ clickable: true }}
             breakpoints={{

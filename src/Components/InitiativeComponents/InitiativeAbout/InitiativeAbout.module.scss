@@ -1,0 +1,28 @@
+@import "../../../index.scss";
+
+
+.main{
+    padding: 30px 0;
+    .content{
+        border-bottom: 0.5px solid rgb(28, 71, 108, 0.2);
+        p{
+            font-family: "calibri";
+            color: $DarkBlueColor;
+            font-size: 19.2px;
+            line-height: 23px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+}
+
+body[dir="rtl"] {
+    .main{
+        .content{
+            p{
+                font-family: "arabic";
+                letter-spacing: 0.5px;
+            }
+        }
+    }   
+}

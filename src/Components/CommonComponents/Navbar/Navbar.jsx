@@ -5,12 +5,12 @@ import TopBar from "../TopBar/TopBar";
 import style from "./Navbar.module.scss";
 import Modal from "../../HomeComponents/Modal/Modal";
 
-export default function Navbar() {
+export default function Navbar({ setLang }) {
   const [t, i18n] = useTranslation();
 
   return (
     <>
-      <TopBar />
+      <TopBar setLang={setLang} />
       <div className={`${style.navy} py-3`}>
         <div className={`${style.logo}`}>
           <img
@@ -45,7 +45,7 @@ export default function Navbar() {
             <span>{t("Inmenu")}</span>
           </NavLink>
           <NavLink
-            to="healthcare"
+            to="projects"
             className={({ isActive }) =>
               isActive ? " nav-link hoverClr" : "nav-link"
             }

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import style from "./TopBar.module.scss";
 
-export default function TopBar() {
+export default function TopBar({ setLang }) {
   const [t, i18n] = useTranslation();
   document.body.dir = i18n.dir();
 
@@ -26,7 +26,8 @@ export default function TopBar() {
             onClick={() => {
               localStorage.setItem("lang", "ar");
               i18n.changeLanguage("ar");
-              window.reload();
+              window.reload()
+              setLang("ar");
             }}
           >
             <span className={`${style.last}`}>عربي</span>
@@ -38,7 +39,8 @@ export default function TopBar() {
             onClick={() => {
               localStorage.setItem("lang", "en");
               i18n.changeLanguage("en");
-              window.reload();
+              window.reload()
+              setLang("en");
             }}
           >
             <span>English</span>

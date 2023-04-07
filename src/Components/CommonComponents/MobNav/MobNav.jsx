@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import style from "./MobNav.module.scss";
 import MobModel from "../../HomeComponents/MobModel/MobModel";
 
-export default function MobileNav() {
+export default function MobileNav({setLang}) {
   const [isOpen, setisOpen] = useState(false);
   const [t, i18n] = useTranslation();
   const toggle = () => {
     setisOpen(!isOpen);
   };
   document.body.dir = i18n.dir();
+
   return (
     <>
       <div className={`${style.mobNav}`}>
@@ -46,30 +47,30 @@ export default function MobileNav() {
             <img src="images/download.png" alt="logo" />
           </div>
           <div className={`${style.center}`}>
-          {i18n.language === "en" && (
-          <Link
-            className="nav-link"
-            onClick={() => {
-              localStorage.setItem("lang", "ar");
-              i18n.changeLanguage("ar");
-              window.reload();
-            }}
-          >
-            <span className={`${style.last}`}>عربي</span>
-          </Link>
-        )}
-        {i18n.language === "ar" && (
-          <Link
-            className="nav-link"
-            onClick={() => {
-              localStorage.setItem("lang", "en");
-              i18n.changeLanguage("en");
-              window.reload();
-            }}
-          >
-            <span>English</span>
-          </Link>
-        )}
+            {i18n.language === "en" && (
+              <Link
+                className="nav-link"
+                onClick={() => {
+                  localStorage.setItem("lang", "ar");
+                  i18n.changeLanguage("ar");
+                  setLang("ar");
+                }}
+              >
+                <span className={`${style.last}`}>عربي</span>
+              </Link>
+            )}
+            {i18n.language === "ar" && (
+              <Link
+                className="nav-link"
+                onClick={() => {
+                  localStorage.setItem("lang", "en");
+                  i18n.changeLanguage("en");
+                  setLang("en");
+                }}
+              >
+                <span>English</span>
+              </Link>
+            )}
           </div>
           <div className={`${style.icon}`}>
             <i className="fa-solid fa-xmark" onClick={toggle}></i>
@@ -85,49 +86,49 @@ export default function MobileNav() {
         >
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="/" className={`${style.links} nav-link`}>
+            <Link to="/" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("homeMenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="about" className={`${style.links} nav-link`}>
+            <Link to="about" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("aboutmenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="initiative" className={`${style.links} nav-link`}>
+            <Link to="initiative" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("Inmenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="healthcare" className={`${style.links} nav-link`}>
+            <Link to="projects" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("healthmeny")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="news" className={`${style.links} nav-link`}>
+            <Link to="news" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("newsMenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="publication" className={`${style.links} nav-link`}>
+            <Link to="publication" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("pubMenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="career" className={`${style.links} nav-link`}>
+            <Link to="career" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("carrerMenu")}
             </Link>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="contact" className={`${style.links} nav-link`}>
+            <Link to="contact" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
               {t("contactmenu")}
             </Link>
           </div>
