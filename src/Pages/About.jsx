@@ -14,9 +14,10 @@ import AnimatedRoutes from "./AnimatedRoutes";
 export default function About() {
   let dispatch = useDispatch();
   const { data } = useSelector((state) => state.about);
+  const  {lang}  = useSelector((state) => state.loading);
   useEffect(() => {
-    dispatch(getAboutPage());
-  }, [dispatch]);
+    dispatch(getAboutPage(lang));
+  }, [dispatch,lang]);
 
   return (
     <>

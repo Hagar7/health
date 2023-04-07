@@ -4,7 +4,7 @@ import style from "./InitiativeEvent.module.scss";
 import EventsGallery from "../EventsGallery/EventsGallery";
 import JourneyGallery from "../JourneyGallery/JourneyGallery";
 
-export default function InitiativeEvent({ journey, events,eventSection }) {
+export default function InitiativeEvent({ journey, events, eventSection }) {
   return (
     <div className={`${style.mainEvent}`}>
       <div className="container">

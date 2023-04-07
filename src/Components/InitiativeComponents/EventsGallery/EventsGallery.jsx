@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import style from "./EventsGallery.module.scss";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import { Grid, Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import "./EventsGallery.css";
 import EventItem from "../EventItem/EventItem";
 
 export default function EventsGallery({ events }) {
@@ -16,9 +9,10 @@ export default function EventsGallery({ events }) {
   
 
 const [gallery,setGallery] = useState(null)
-
+const [title,setTitle] = useState(null)
 const openGallery = (element) => {
   setGallery(element.images)
+  setTitle(element.sectionTitle)
 };
 
   const closeGallery = () => {
@@ -53,13 +47,8 @@ const openGallery = (element) => {
                 </div>
               </div>
             )):
-            
- 
-      <EventItem images={gallery} closeGallery={closeGallery}/>
+      <EventItem images={gallery} closeGallery={closeGallery} events={events} title={title}/>
      }
-     
-
-
     </>
   );
 }

@@ -62,14 +62,9 @@ export default function JourneyGallery({journey}) {
 <Lightbox
 open={open}
 close={() => setOpen(false)}
-slides={[   
-{ src: `${journey?.images[0]}`},
-{ src: `${journey?.images[1]}` },
-{ src: `${journey?.images[2]}` },
-{ src: `${journey?.images[3]}` },
-{ src: `${journey?.images[4]}` },
-{ src: `${journey?.images[5]}` },
-]}
+slides={journey?.images.map((image) => {
+  return { src: image }
+})}
 plugins={[Fullscreen, Slideshow]}
 
 />     

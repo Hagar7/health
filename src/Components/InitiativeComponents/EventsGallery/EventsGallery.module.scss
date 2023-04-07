@@ -1,181 +1,168 @@
 @import "../../../index.scss";
 
-
-.eventImg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    img{
-        @include borderRadius(10px);
-        width: 60%;
-    }
+.eventImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  img {
+    @include borderRadius(10px);
+    width: 60%;
+  }
 }
-.eventInfo{
-    margin-top: 30px;
-    h3{
-        color: $DarkBlueColor;
-        font-size: 35px;
-        margin-bottom: 20px;
+.eventInfo {
+  margin-top: 30px;
+  h3 {
+    color: $DarkBlueColor;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .eventBtn {
+    .one {
+      @include borderRadius(30px);
+      margin: 0 20px 20px 0;
+      height: 60px;
+      width: 180px;
+      background-color: $SecMainColor;
+      border: 1px solid $SecMainColor;
+      @include transition();
+      i {
+        color: $textColor;
+        margin-left: 15px;
+      }
+      &:hover {
+        transform: translate(0px, 10px);
+        -webkit-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+      }
     }
-    .eventBtn{
-        .one {
-            @include borderRadius(30px);
-            margin: 0 20px 20px 0;
-            height: 60px;
-            width: 180px;
-            background-color: $SecMainColor;
-            border: 1px solid $SecMainColor;
-            @include transition();
-            transform: translate(0px, 0px);
-            -webkit-transform: translate(0px, 0px);
-            -moz-transform: translate(0px, 0px);
-            -ms-transform: translate(0px, 0px);
-            -o-transform: translate(0px, 0px);
-            i {
-              color: $textColor;
-              margin-left: 15px;
-            }
-            &:hover {
-              transform: translate(0px, 10px);
-              -webkit-transform: translate(0px, 10px);
-              -moz-transform: translate(0px, 10px);
-              -ms-transform: translate(0px, 10px);
-              -o-transform: translate(0px, 10px);
-            }
-          }
-    }
-}  
+  }
+}
 
-
-body[dir='rtl']{
-  .eventInfo{
+body[dir="rtl"] {
+  .eventInfo {
     margin-top: 30px;
-    h3{
+    h3 {
       font-family: "arabic";
     }
-    .eventBtn{
-        .one {
-          margin: 0 0px 20px 20px;
-          font-family: "arabic";
-            i {
-              color: $textColor;
-              margin-right: 15px;
-            }
-          }
+    .eventBtn {
+      .one {
+        margin: 0 0px 20px 20px;
+        font-family: "arabic";
+        i {
+          color: $textColor;
+          margin-right: 15px;
+        }
+      }
     }
-}  
-
+  }
 }
-
 
 @media screen and (max-width: 767px) {
-  .eventImg{
+  .eventImg {
     margin-bottom: 0px;
-    img{
-        @include borderRadius(10px);
-        width: 90%;
+    img {
+      @include borderRadius(10px);
+      width: 90%;
     }
-}
+  }
 
-  .eventInfo{
+  .eventInfo {
     margin-top: 30px;
     margin-left: 20px;
-    h3{
-        font-size: 22px;
-        margin-bottom: 20px;
+    h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
     }
-    .eventBtn{
-        .one {
-            @include borderRadius(30px);
-            margin: 0 20px 20px 0;
-            height: 60px;
-            width: 180px;
-          }
+    .eventBtn {
+      .one {
+        @include borderRadius(30px);
+        margin: 0 20px 20px 0;
+        height: 60px;
+        width: 180px;
+      }
     }
-} 
+  }
 
-body[dir='rtl']{
-  .eventImg{
-    margin-bottom: 0px;
-    img{
+  body[dir="rtl"] {
+    .eventImg {
+      margin-bottom: 0px;
+      img {
         @include borderRadius(10px);
         width: 90%;
+      }
     }
-}
 
-  .eventInfo{
-    margin-top: 30px;
-    margin-right: 20px;
-    h3{
+    .eventInfo {
+      margin-top: 30px;
+      margin-right: 20px;
+      h3 {
         font-size: 22px;
         margin-bottom: 20px;
-    }
-    .eventBtn{
+      }
+      .eventBtn {
         .one {
-            @include borderRadius(30px);
-            margin: 0 0px 20px 20px;
-            height: 60px;
-            width: 180px;
-          }
+          @include borderRadius(30px);
+          margin: 0 0px 20px 20px;
+          height: 60px;
+          width: 180px;
+        }
+      }
     }
-}  
+  }
 }
-}
-
-
-
-
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .eventImg{
+  .eventImg {
     margin-bottom: 0px;
-    img{
-        @include borderRadius(10px);
-        width: 90%;
+    img {
+      @include borderRadius(10px);
+      width: 90%;
     }
-}
+  }
 
-  .eventInfo{
+  .eventInfo {
     margin-top: 30px;
     margin-left: 20px;
-    h3{
-        font-size: 25px;
-        margin-bottom: 20px;
+    h3 {
+      font-size: 25px;
+      margin-bottom: 20px;
     }
-    .eventBtn{
-        .one {
-            @include borderRadius(30px);
-            margin: 0 20px 20px 0;
-            height: 60px;
-            width: 180px;
-          }
+    .eventBtn {
+      .one {
+        @include borderRadius(30px);
+        margin: 0 20px 20px 0;
+        height: 60px;
+        width: 180px;
+      }
     }
-} 
-body[dir='rtl']{
-  .eventImg{
-    margin-bottom: 0px;
-    img{
+  }
+  body[dir="rtl"] {
+    .eventImg {
+      margin-bottom: 0px;
+      img {
         @include borderRadius(10px);
         width: 90%;
+      }
     }
-}
 
-  .eventInfo{
-    margin-top: 30px;
-    margin-right: 20px;
-    h3{
+    .eventInfo {
+      margin-top: 30px;
+      margin-right: 20px;
+      h3 {
         font-size: 22px;
         margin-bottom: 20px;
-    }
-    .eventBtn{
+      }
+      .eventBtn {
         .one {
-            @include borderRadius(30px);
-            margin: 0 0px 20px 20px;
-            height: 60px;
-            width: 180px;
-          }
+          @include borderRadius(30px);
+          margin: 0 0px 20px 20px;
+          height: 60px;
+          width: 180px;
+        }
+      }
     }
-}  
-}
+  }
 }

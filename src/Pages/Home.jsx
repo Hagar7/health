@@ -13,10 +13,13 @@ import AnimatedRoutes from "./AnimatedRoutes";
 export default function Home() {
   const dispatch = useDispatch();
   const { data } = useSelector((state) => state.home);
-
+  const  {lang}  = useSelector((state) => state.loading);
   useEffect(() => {
-    dispatch(getHomePage());
-  }, [dispatch]);
+    dispatch(getHomePage(lang));
+  }, [dispatch,lang]);
+
+
+
 
   return (
     <>

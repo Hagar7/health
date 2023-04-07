@@ -10,7 +10,6 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 
 export default function ProjectGallery({gallery}) {
     const [open, setOpen] = useState(false);
-    console.log(gallery);
   return (
     <div className={`${style.mainGallery}`}>
     <div className="container">

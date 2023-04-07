@@ -6,6 +6,7 @@ import news from './News.Slice'
 import publication from './Publication.Slice'
 import project from './Project.Slice'
 import projectId from './ProjectId.Slice'
+import loading from './Loading.Slice'
 export default configureStore({
   reducer: {
     home,
@@ -14,6 +15,7 @@ export default configureStore({
     news,
     publication,
     project,
-    projectId
+    projectId,
+    loading
   },
 });

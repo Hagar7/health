@@ -26,7 +26,7 @@ export default function TopBar({ setLang }) {
             onClick={() => {
               localStorage.setItem("lang", "ar");
               i18n.changeLanguage("ar");
-              window.reload()
+              // window.reload()
               setLang("ar");
             }}
           >
@@ -39,7 +39,7 @@ export default function TopBar({ setLang }) {
             onClick={() => {
               localStorage.setItem("lang", "en");
               i18n.changeLanguage("en");
-              window.reload()
+              // window.reload()
               setLang("en");
             }}
           >
