@@ -1,0 +1,19 @@
+@import "../../../index.scss";
+
+.galleryVideo{
+    .myvideo{
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .galleryVideo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .myvideo{
+            width: 90% !important;
+        }
+    }
+}

@@ -3,13 +3,13 @@ import axios from "axios";
 
 export const getNewsPage = createAsyncThunk(
   "news/getNewsPage",
-  async (_, thunkAPI) => {
+  async (lang, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
         `https://sehetna.ok-adv.com/api/pages/news-and-events`,
         {
-          headers: { "X-App-Locale": localStorage.getItem("lang") || "en" },
+          headers: { "X-App-Locale": lang },
         }
       );
 

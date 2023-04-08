@@ -13,7 +13,7 @@ export const getAboutPage = createAsyncThunk(
         const { data } = await axios(
           `https://sehetna.ok-adv.com/api/pages/about`,
           {
-            headers: { "X-App-Locale": lang  },
+            headers: { "X-App-Locale": lang },
           }
         );
         return data.data.sections;

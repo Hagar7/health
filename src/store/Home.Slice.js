@@ -14,7 +14,6 @@ export const getHomePage = createAsyncThunk(
       );
       return data.data.sections;
     } catch (error) {
-      console.log(error);
       return rejectWithValue(error.message);
     }
   }

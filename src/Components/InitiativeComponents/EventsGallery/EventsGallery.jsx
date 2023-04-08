@@ -10,6 +10,8 @@ export default function EventsGallery({ events }) {
 
 const [gallery,setGallery] = useState(null)
 const [title,setTitle] = useState(null)
+
+
 const openGallery = (element) => {
   setGallery(element.images)
   setTitle(element.sectionTitle)

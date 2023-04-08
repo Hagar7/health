@@ -54,6 +54,7 @@ export default function MobileNav({setLang}) {
                   localStorage.setItem("lang", "ar");
                   i18n.changeLanguage("ar");
                   setLang("ar");
+                  setisOpen(false)
                 }}
               >
                 <span className={`${style.last}`}>عربي</span>
@@ -66,6 +67,7 @@ export default function MobileNav({setLang}) {
                   localStorage.setItem("lang", "en");
                   i18n.changeLanguage("en");
                   setLang("en");
+                  setisOpen(false)
                 }}
               >
                 <span>English</span>

@@ -1,7 +1,6 @@
 .shapeThree .swiper {
     min-height: 70vh;
     padding:10px 30px 30px;
-    /* margin-top: 40px; */
     margin-left: auto;
     display: flex;
    justify-content: space-around !important;

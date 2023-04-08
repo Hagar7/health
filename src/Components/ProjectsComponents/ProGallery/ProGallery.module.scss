@@ -1,0 +1,27 @@
+@import "../../../index.scss";
+
+
+
+.ProGallery{
+    margin-top: 60px;
+    min-height: 100vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        margin-bottom: 40px;
+        h2{
+            font-size: 38px;
+            color: $DarkBlueColor;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .ProGallery{
+        margin-top: 60px;
+        min-height: 60vh;
+    }
+}

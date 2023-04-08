@@ -17,7 +17,7 @@ export default function SehtnaStart({sehetnaStart}) {
     }
         <p dangerouslySetInnerHTML={{__html:sehetnaStart?.description}}></p>
         <div className={`${style.aboutBtns}`} >
-        <Link to=""> <button className={`${style.one} btn btn-primary`}>
+        <Link to="/projects"> <button className={`${style.one} btn btn-primary`}>
           {sehetnaStart?.btn1Text} 
           {i18n.language === "en" &&
            <i className="fa-solid fa-chevron-right"></i> 
@@ -26,7 +26,7 @@ export default function SehtnaStart({sehetnaStart}) {
            <i className="fa-solid fa-chevron-left"></i> 
           }
           </button></Link>
-          <Link to=""><button className={`${style.two} btn btn-primary`}>
+          <Link to="/initiative"><button className={`${style.two} btn btn-primary`}>
           {sehetnaStart?.btn2Text}
           {i18n.language === "en" &&
            <i className="fa-solid fa-chevron-right"></i> 

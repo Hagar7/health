@@ -1,4 +1,4 @@
-import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import {  createHashRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
@@ -7,6 +7,8 @@ import News from "./Pages/News";
 import Publication from "./Pages/Publication";
 import ProjectsMain from "./Pages/ProjectsMain";
 import Project from "./Pages/Project";
+import Contact from "./Pages/Contact";
+import Career from "./Pages/Career";
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         { path: "publication", element: <Publication /> },
         { path: "projects", element: <ProjectsMain /> },
         { path: "projects/:id", element: <Project /> },
+        { path: "contact", element: <Contact/> },
+        { path: "career", element: <Career /> },
       ],
     },
   ]);

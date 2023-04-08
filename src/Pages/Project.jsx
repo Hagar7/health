@@ -5,21 +5,26 @@ import ProjectBanner from '../Components/ProjectsComponents/ProjectBanner/Projec
 import ProjectTitle from '../Components/ProjectsComponents/ProjectTitle/ProjectTitle';
 import Statistics from '../Components/ProjectsComponents/Statistics/Statistics';
 import ProjectGallery from '../Components/ProjectsComponents/ProjectGallery/ProjectGallery';
+import AnimatedRoutes from './AnimatedRoutes';
+import ProGallery from '../Components/ProjectsComponents/ProGallery/ProGallery';
 
 export default function Project() {
   const dispatch = useDispatch();
   const { info } = useSelector((state) => state.projectId);
   const { data } = useSelector((state) => state.project);
-  console.log(data);
+  const  {lang}  = useSelector((state) => state.loading);
   useEffect(() => {
-    dispatch(getProjectId());
-  }, [dispatch]);
+    dispatch(getProjectId(lang));
+  }, [dispatch,lang]);
   return (
     <>
+    <AnimatedRoutes/>
     <ProjectBanner banner={data?.banner} />
     <ProjectTitle statistics={info?.statistics}/>
     <Statistics statistics={info?.statistics.cards}/>
-    <ProjectGallery gallery={info?.gallery.cards}/>
+    {info?.videos?
+    <ProjectGallery gallery={info?.images} video={info?.videos.videos}/>:<ProGallery gallery={info?.images.images}/>}
+    
     </>
   )
 }

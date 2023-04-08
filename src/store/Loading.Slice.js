@@ -10,7 +10,6 @@ const LoadingSlice = createSlice({
   initialState:{lang:localStorage.getItem("lang") || "en"},
   reducers:{
     changeLanguage:(state,action)=>{
-      console.log(action.payload);
       state.lang = action.payload
     }
   }

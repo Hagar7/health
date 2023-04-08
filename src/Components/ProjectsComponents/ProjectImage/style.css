@@ -18,7 +18,7 @@
   .proImg  .swiper-slide img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 250PX;
     object-fit: cover;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -48,6 +48,15 @@
     height: 11px;
     width: 11px;
     }
+    .proImg  .swiper-slide img {
+      width: 85% !important;
+      margin-right: 40px;
+  }
+  body[dir="rtl"]  .proImg  .swiper-slide img {
+    width: 85% !important;
+    margin-right: 0px !important;
+    margin-left: 40px !important;
+}
 }
 
 
@@ -59,7 +68,7 @@
       }
       .proImg .swiper-horizontal > .proImg .swiper-pagination-bullets,
 .proImg .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top:98.3% !important;
+  top:96.3% !important;
   display: block;
 }
 .proImg .swiper-pagination-bullet-active {

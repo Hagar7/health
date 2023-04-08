@@ -40,7 +40,7 @@ export default function Statistics({statistics}) {
           <SwiperSlide key={item.id}>
           <div className="shapeContainer">
             <div className="counter">
-              <Counter end={3000} start={0} timer={50} />
+              <Counter end={item.count} start={0} timer={50} />
             </div>
             <div className="title">
               <h3>{item.title}</h3>

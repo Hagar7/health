@@ -10,7 +10,7 @@ export default function HomeProject({project}) {
       <div className="container">
         <div className={`${style.head}`}>
           <h2>{t("latestPro")}</h2>
-          <Link to="">
+          <Link to="projects">
             <button className={`${style.two} btn btn-primary`}>
             {t("projectBtn")} 
             {i18n.language === "en" && 
@@ -27,9 +27,9 @@ export default function HomeProject({project}) {
         <div className={`${style.content}`} style={{ backgroundImage: `url(${project?.background})` }}>
           <div className={`${style.caption}`}>
             <h3>{project?.title}</h3>
-            <Link>
+            <Link to={`/projects/51`}>
               <button className={`${style.myBtn} btn btn-primary`}>
-              {t("projectBtn")}   
+              {t("buttonLearn")}   
               {i18n.language === "en" && 
                           <i className="fa-solid fa-chevron-right">
                       </i>

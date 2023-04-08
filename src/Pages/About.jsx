@@ -19,6 +19,10 @@ export default function About() {
     dispatch(getAboutPage(lang));
   }, [dispatch,lang]);
 
+
+
+
+
   return (
     <>
       <AnimatedRoutes />

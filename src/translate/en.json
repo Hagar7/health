@@ -43,5 +43,8 @@
     "news":"NEWS",
     "fitness":"NUTRITION, MINDFULNESS & FITNESS",
     "ngo":"THE NGO",
-    "back":"Back To Events"
+    "back":"Back To Events",
+    "gallery":"GALLERY",
+    "video":"VIDEO",
+    "album":"GALLERY"
 }

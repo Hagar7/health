@@ -4,12 +4,20 @@
 .mainGallery{
     margin-top: 60px;
     min-height: 100vh;
+    .head{
+        border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+        margin-bottom: 40px;
+        h2{
+            font-size: 38px;
+            color: $DarkBlueColor;
+        }
+    }
     .galleryInfo{
         .galleryTabs{
             display: flex;
             align-items: center;
             justify-content: space-around;
-            font-size: 40px;
+            font-size: 30px;
             .right{
                 width: 50% !important;
                 display: flex;
@@ -53,16 +61,25 @@
     }
 }
 
+
+
+
 @media screen and (max-width: 767px) {
     .mainGallery{
         margin-top: 60px;
         min-height: 100vh;
+        .head{
+            h2{
+                font-size: 25px;
+                text-align: center;
+            }
+        }
         .galleryInfo{
             .galleryTabs{
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-                font-size: 40px;
+                font-size: 20px;
                 .right{
                     width: 50% !important;
                     display: flex;
@@ -105,10 +122,28 @@
             }
         }
     }
+    body[dir='rtl']{
+        .mainGallery{
+            .head{
+                h2{
+                    font-size: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
     .mainGallery{
         margin-top: 60px;
-        min-height: 100vh;}
+        min-height: 70vh;
+        .head{
+            border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+            h2{
+                font-size: 45px;
+                color: $DarkBlueColor;
+                text-align: center;
+            }
+        }}
 }

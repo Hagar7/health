@@ -3,16 +3,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getPublicationPage } from '../store/Publication.Slice';
 import PubBanner from '../Components/PublicationComponents/PubBanner/PubBanner';
 import Pub from '../Components/PublicationComponents/Pub/Pub';
+import AnimatedRoutes from './AnimatedRoutes';
 
 export default function Publication() {
     const dispatch = useDispatch();
     const { data } = useSelector((state) => state.publication);
+    const  {lang}  = useSelector((state) => state.loading);
+
   
     useEffect(() => {
-      dispatch(getPublicationPage());
-    }, [dispatch]);
+      dispatch(getPublicationPage(lang));
+    }, [dispatch,lang]);
   return (
    <>
+   <AnimatedRoutes/>
    <PubBanner banner={data?.banner}/>
    <Pub publications={data?.publications}/>
    </>

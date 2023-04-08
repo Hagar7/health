@@ -5,17 +5,20 @@ import { getInitiativePage } from "../store/Initiative.slice";
 import InitiativeAbout from "../Components/InitiativeComponents/InitiativeAbout/InitiativeAbout";
 import Fitness from "../Components/InitiativeComponents/Fitness/Fitness";
 import InitiativeEvent from "../Components/InitiativeComponents/InitiativeEvent/InitiativeEvent";
+import AnimatedRoutes from "./AnimatedRoutes";
 
 export default function Initiative() {
   const dispatch = useDispatch();
   const { data } = useSelector((state) => state.initiative);
+  const  {lang}  = useSelector((state) => state.loading);
 
   useEffect(() => {
-    dispatch(getInitiativePage());
-  }, [dispatch]);
+    dispatch(getInitiativePage(lang));
+  }, [dispatch,lang]);
 
   return (
     <>
+    <AnimatedRoutes/>
       <InitiativeBanner banner={data?.banner} />
       <InitiativeAbout initiative={data?.initiative} />
       <Fitness nutrition={data?.nutrition} />

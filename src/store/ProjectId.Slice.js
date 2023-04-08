@@ -5,13 +5,13 @@ import axios from "axios";
 
 export const getProjectId = createAsyncThunk(
   "projectId/getProjectId",
-  async (_, thunkAPI) => {
+  async (lang, thunkAPI) => {
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
         `https://sehetna.ok-adv.com/api/pages/projects-75`,
         {
-          headers: { "X-App-Locale": localStorage.getItem("lang") || "en" },
+          headers: { "X-App-Locale": lang },
         }
       );
       return data.data.sections;
