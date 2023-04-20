@@ -1,5 +1,4 @@
 @import "../../../index.scss";
-
 .mobNav {
   padding: 0 10px;
   display: flex;
@@ -17,13 +16,12 @@
   }
   .mobRight {
     .icon {
-      font-size: 30px;
+      font-size: 25px !important;
       color: $DarkBlueColor;
     }
   }
 }
 .mobBar {
-  
   background-color: $DarkBlueColor;
   height: 0;
   position: fixed;
@@ -38,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     .logo {
-      width: 27%;
+      width: 23% !important;
       img {
         width: 100%;
       }
@@ -46,18 +44,18 @@
     .center {
       margin-top: 6px;
       color: #eee;
-      font-size: 20px;
+      font-size: 18px !important;
     }
     .icon {
       color: #eee;
-      font-size: 33px;
+      font-size: 25px !important;
     }
   }
   .body {
-    padding: 15px;
+    padding: 13px 15px;
     .item {
       display: flex;
-      margin-top: 10px;
+      margin-top: 7px;
       border-bottom: 0.5px solid #4e7a9a;
       i {
         color: $SecMainColor;
@@ -67,6 +65,7 @@
         text-align: left;
         margin-left: 20px;
         margin-bottom: 15px;
+        font-size: 16px !important;
       }
     }
   }
@@ -78,7 +77,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 25px 15px;
+      margin: 15px 15px;
       a {
         color: #eee;
         margin-left: 15px;
@@ -87,7 +86,7 @@
     }
     .copy {
       color: #eee;
-      font-size: 14px;
+      font-size: 14px !important;
       text-align: center;
     }
   }
@@ -111,53 +110,26 @@ body[dir="rtl"] {
     }
     .mobRight {
       .icon {
-        font-size: 30px;
+        font-size: 25px;
         color: $DarkBlueColor;
       }
     }
   }
   .mobBar {
-    background-color: $DarkBlueColor;
-    height: 0;
-    position: absolute;
-    z-index: 99999;
-    width: 100%;
-    top: 0;
-    padding: 0px 20px;
     .head {
-      display: flex;
-      justify-content: space-between;
-      .logo {
-        width: 27%;
-        img {
-          width: 100%;
-        }
-      }
       .center {
         margin-top: 6px;
-        color: #eee;
-        font-size: 20px;
-      }
-      .icon {
-        color: #eee;
-        font-size: 33px;
       }
     }
     .body {
-      padding: 17px;
+      padding: 13px 15px !important;
       .item {
-        display: flex;
-        margin-top: 10px;
-        border-bottom: 0.5px solid #4e7a9a;
-        i {
-          margin-top: 5px !important;
-          color: $SecMainColor;
-        }
+        margin-top: 7px;
         .links {
-          color: #eee;
           text-align: right;
           margin-right: 20px;
           margin-bottom: 15px;
+          font-size: 16px !important;
         }
       }
     }
@@ -169,33 +141,43 @@ body[dir="rtl"] {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 25px 15px;
+        margin: 7px 15px !important;
         a {
           color: #eee;
           margin-left: 15px;
-          font-size: 30px;
+          font-size: 25px;
         }
       }
       .copy {
         color: #eee;
-        font-size: 14px;
+        font-size: 14px !important;
         text-align: center;
       }
     }
   }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  body[dir="ltr"] {
+
     .mobNav {
       .mobRight {
         .icon {
-          font-size: 50px;
+          font-size: 35px;
           color: $DarkBlueColor;
         }
       }
+      .mobLeft {
+        width: 20% !important;
+        padding: 10px;
+        .logo {
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
-
+  
     .mobBar {
       .head {
         .center {
@@ -205,50 +187,71 @@ body[dir="rtl"] {
         }
         .icon {
           color: #eee;
-          font-size: 53px;
+          font-size: 33px;
+        }
+        .logo {
+          width: 15% !important;
+          img {
+            width: 100%;
+          }
         }
       }
       .body {
-        padding: 25px;
+        padding: 10px 25px !important;
         .item {
-          margin-top: 20px;
+          margin-top: 6px;
           i {
-            margin-top: 10px;
+            margin-top: 6px;
           }
           .links {
-            margin-bottom: 20px;
-            font-size: 23px;
+            margin-bottom: 10px;
+            font-size: 17px !important;
           }
         }
       }
       .footer {
-        margin-top: 20px;
+        margin-top: 5px;
         .myBtn {
-          margin: 30px 0 20px;
+          margin: 10px 0 20px;
         }
         .social {
-          margin: 35px 15px;
+          margin: 5px 15px;
           a {
-            font-size: 40px;
+            font-size: 30px;
           }
         }
         .copy {
-          font-size: 18px;
+          font-size: 16px !important;
         }
       }
     }
-  }
-
+  
+  
   body[dir="rtl"] {
     .mobNav {
       .mobRight {
         .icon {
-          font-size: 60px;
+          font-size: 45px;
+        }
+      }
+      .mobLeft {
+        width: 20% !important;
+        padding: 10px;
+        .logo {
+          img {
+            width: 100%;
+          }
         }
       }
     }
     .mobBar {
       .head {
+        .logo {
+          width: 15%;
+          img {
+            width: 100%;
+          }
+        }
         .center {
           margin-top: 6px;
           color: #eee;
@@ -256,32 +259,32 @@ body[dir="rtl"] {
         }
         .icon {
           color: #eee;
-          font-size: 53px;
+          font-size: 33px;
         }
       }
       .body {
-        padding: 25px;
+        padding: 10px 25px !important;
         .item {
-          margin-top: 20px;
-          font-size: 26px !important;
+          margin-top: 10px;
+          font-size: 16px !important;
           i {
-            margin-top: 10px;
+            margin-top: 6px;
           }
           .links {
-            margin-bottom: 20px;
-            font-size: 23px;
+            margin-bottom: 6px;
+            font-size: 20px;
           }
         }
       }
       .footer {
-        margin-top: 20px;
+        margin-top: 5px;
         .myBtn {
-          margin: 30px 0 20px;
+          margin: 10px 0 20px;
         }
         .social {
-          margin: 35px 15px;
+          margin: 5px 15px;
           a {
-            font-size: 40px;
+            font-size: 30px;
           }
         }
         .copy {
