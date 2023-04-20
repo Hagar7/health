@@ -16,11 +16,9 @@ export default function ProjectsMain() {
   return (
     <>
     <AnimatedRoutes/>
-    <div className="container-fluid px-0 bg-white">
       <ProjectBanner banner={data?.banner} />
       <MainProjectsPage thengo={data?.thengo} />
       <MainProjects projects={data?.projects.cards} />
-      </div>
     </>
   );
 }

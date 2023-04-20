@@ -19,7 +19,6 @@ export default function Project() {
   return (
     <>
       <AnimatedRoutes />
-      <div className="container-fluid px-0 bg-white">
       <ProjectBanner banner={data?.banner} />
       <ProjectTitle statistics={info?.statistics} />
       <Statistics statistics={info?.statistics.cards} />
@@ -28,7 +27,6 @@ export default function Project() {
       ) : (
         <ProGallery gallery={info?.images.images} />
       )}
-      </div>
     </>
   );
 }

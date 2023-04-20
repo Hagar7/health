@@ -19,7 +19,6 @@ export default function Initiative() {
   return (
     <>
     <AnimatedRoutes/>
-    <div className="container-fluid px-0 bg-white">
       <InitiativeBanner banner={data?.banner} />
       <InitiativeAbout initiative={data?.initiative} />
       <Fitness nutrition={data?.nutrition} />
@@ -28,7 +27,6 @@ export default function Initiative() {
         events={data?.events.cards}
         eventSection={data?.events}
       />
-      </div>
     </>
   );
 }

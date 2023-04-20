@@ -17,10 +17,8 @@ export default function News() {
   return (
     <>
     <AnimatedRoutes/>
-    <div className="container-fluid px-0 bg-white">
     <NewsBanner banner={data?.banner}/>
     <NewsSection news={data?.news.cards}/>
-    </div>
     </>
   )
 }

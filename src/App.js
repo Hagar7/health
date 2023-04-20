@@ -10,6 +10,7 @@ import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
 import Career from "./Pages/Career";
 import Donation from "./Pages/Donation";
+import NotFound from "./Components/CommonComponents/NotFound/NotFound";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     {
       path: "/",
       element: <Layout />,
+      errorElement:<NotFound/>,
       children: [
         { index: true, element: <Home /> },
         { path: "about", element: <About /> },
