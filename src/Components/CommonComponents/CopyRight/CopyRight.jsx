@@ -11,7 +11,7 @@ export default function CopyRight() {
             <div className="row">
                 <div className="col-lg-6">
                     <div className={`${style.item}`}>
-                        <img src="images/download.png" alt="logo"  />
+                        <img src="images/footer.png" alt="logo"  />
                     </div>
                 </div>
                 <div className="col-lg-2 "></div>
@@ -58,7 +58,6 @@ export default function CopyRight() {
         <div className="container">
             <p>{t("copyRight")}</p>
         </div>
-
         </div>
     </>
   )

@@ -1,0 +1,265 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.mission {
+  min-height: 100vh;
+  padding: 60px 0 0;
+}
+.mission .content {
+  min-height: 70vh;
+  background: radial-gradient(circle, #f28863 0, #eb633f 84%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+.mission .content .item1 {
+  position: relative;
+  padding: 40px 50px;
+}
+.mission .content .item1 .test {
+  position: absolute;
+  background-color: #e4c2b7;
+  width: 1px;
+  height: 300px;
+  top: 12%;
+  right: 10px;
+}
+.mission .content .item1 .test:not(:last-child) {
+  background-color: transparent;
+}
+.mission .content .item1 img {
+  width: 13%;
+  color: #eee;
+  margin: 5px 0 15px;
+}
+.mission .content .item1 h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.mission .content .item1 .brdr {
+  border: 1px solid #eeeeee;
+  width: 25%;
+  margin: auto;
+}
+.mission .content .item1 p {
+  margin: 40px 0px 10px;
+  font-size: 19.2px;
+  font-family: "calibri";
+  text-align: left;
+}
+.mission .content .item1 button {
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+  color: #eee;
+  text-decoration: underline;
+  font-size: 17px;
+}
+.mission .content .mainModal .modalBody {
+  color: red;
+  --bs-modal-width: 75%;
+}
+.mission .content .mainModal .modalBody .modalContent {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+.mission .content .mainModal .modalBody .modalContent .modalInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.mission .content .mainModal .modalBody .modalContent .modalInfo .modalClosed {
+  color: #e85530 !important;
+  font-size: 35px;
+  cursor: pointer;
+}
+.mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara {
+  color: #1c476c;
+  text-align: left;
+  padding: 15px;
+}
+.mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara p {
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+.mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara span {
+  font-size: 15px;
+}
+
+body[dir=rtl] .mission .content .item1 .test1 {
+  position: absolute;
+  background-color: #e4c2b7;
+  width: 1px;
+  height: 300px;
+  top: 12%;
+  left: 10px;
+}
+body[dir=rtl] .mission .content .item1 .test1:not(:last-child) {
+  background-color: transparent;
+}
+body[dir=rtl] .mission .content .item1 h3 {
+  font-family: "arabic";
+}
+body[dir=rtl] .mission .content .item1 .brdr {
+  border: 1px solid #eeeeee;
+  width: 25%;
+  margin: auto;
+}
+body[dir=rtl] .mission .content .item1 p {
+  font-family: "arabic";
+  text-align: right;
+}
+body[dir=rtl] .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara {
+  text-align: right;
+}
+body[dir=rtl] .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara p {
+  font-family: "arabic";
+}
+body[dir=rtl] .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara span {
+  font-family: "arabic";
+}
+
+@media screen and (max-width: 767px) {
+  .mission {
+    min-height: 100vh;
+    padding: 60px 0 40px;
+  }
+  .mission .content .item1 {
+    position: relative;
+    padding: 40px 50px;
+  }
+  .mission .content .item1 .test {
+    position: absolute;
+    background-color: #e4c2b7;
+    width: 50%;
+    height: 2px;
+    top: 3%;
+    right: 80px;
+  }
+  .mission .content .item1 .test:not(:last-child) {
+    background-color: #e4c2b7 !important;
+  }
+  .mission .content .item1 .test:not(:first-child) {
+    background-color: transparent !important;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara {
+    color: #1c476c;
+    text-align: left;
+    padding: 0px;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara p {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mission {
+    min-height: 100vh;
+    padding: 60px 0 40px;
+  }
+  .mission .content .item1 {
+    position: relative;
+    padding: 40px 50px;
+  }
+  .mission .content .item1 ::after {
+    background-color: transparent;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara {
+    color: #1c476c;
+    text-align: left;
+    padding: 15px;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara p {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 600;
+  }
+  .mission .content .mainModal .modalBody .modalContent .modalInfo .modalPara span {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=Mission.module.css.map */

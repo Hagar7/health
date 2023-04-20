@@ -7,7 +7,7 @@ export default function AnimatedRoutes({ children, lang ,active}) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, [lang]);
 
   return (

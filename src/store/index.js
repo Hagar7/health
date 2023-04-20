@@ -7,6 +7,9 @@ import publication from './Publication.Slice'
 import project from './Project.Slice'
 import projectId from './ProjectId.Slice'
 import loading from './Loading.Slice'
+import contact from './Contact.Slice'
+import career from './Career.Slice'
+import donation from './DonationSlice'
 export default configureStore({
   reducer: {
     home,
@@ -16,6 +19,9 @@ export default configureStore({
     publication,
     project,
     projectId,
-    loading
+    loading,
+    contact,
+    career,
+    donation
   },
 });

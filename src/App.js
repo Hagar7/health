@@ -1,4 +1,4 @@
-import {  createHashRouter, RouterProvider } from "react-router-dom";
+import {  createBrowserRouter,  RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
@@ -9,10 +9,11 @@ import ProjectsMain from "./Pages/ProjectsMain";
 import Project from "./Pages/Project";
 import Contact from "./Pages/Contact";
 import Career from "./Pages/Career";
+import Donation from "./Pages/Donation";
 
 
 function App() {
-  const routes = createHashRouter([
+  const routes = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
@@ -26,6 +27,7 @@ function App() {
         { path: "projects/:id", element: <Project /> },
         { path: "contact", element: <Contact/> },
         { path: "career", element: <Career /> },
+        { path: "donation", element: <Donation /> },
       ],
     },
   ]);

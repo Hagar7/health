@@ -16,8 +16,26 @@ body[dir="rtl"]{
         position: relative;
     } 
 }
-  
-  
+@media screen and  (max-width: 1024px) {
+    .myheader {
+        min-height: 80vh;
+    }
+    body[dir="rtl"]{
+        .myheader {
+            min-height: 80vh;
+        } 
+    }
+}
+@media screen and  (max-width: 991px) {
+    .myheader {
+        min-height: 50vh;
+    }
+    body[dir="rtl"]{
+        .myheader {
+            min-height: 50vh;
+        } 
+    }
+}
 @media screen and (max-width: 767px) {
     .myheader {
         min-height: 50vh;
@@ -30,13 +48,3 @@ body[dir="rtl"]{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .myheader {
-        min-height: 50vh;
-    }
-    body[dir="rtl"]{
-        .myheader {
-            min-height: 50vh;
-        } 
-    }
-}

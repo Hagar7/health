@@ -17,15 +17,14 @@
         .navEvent {
           border: 1px solid #d0d7dd !important;
           width: 100%;
-          transition: 1s all ease;
-          -webkit-transition: 1s all ease;
-          -moz-transition: 1s all ease;
-          -ms-transition: 1s all ease;
-          -o-transition: 1s all ease;
-          color: $DarkBlueColor;
+          transition: 0.3s all ease;
+          -webkit-transition: 0.3s all ease;
+          -moz-transition: 0.3s all ease;
+          -ms-transition: 0.3s all ease;
+          -o-transition: 0.3s all ease;
           border-top-left-radius: 0 !important;
           border-top-right-radius: 0 !important;
-        }
+}
       }
       .left {
         width: 50%;
@@ -35,15 +34,14 @@
         .navEvent {
           border: 1px solid #d0d7dd !important;
           width: 100%;
-          transition: 1s all ease;
-          -webkit-transition: 1s all ease;
-          -moz-transition: 1s all ease;
-          -ms-transition: 1s all ease;
-          -o-transition: 1s all ease;
-          color: $DarkBlueColor;
+          transition: 0.3s all ease;
+          -webkit-transition: 0.3s all ease;
+          -moz-transition: 0.3s all ease;
+          -ms-transition: 0.3s all ease;
+          -o-transition: 0.3s all ease;
           border-top-left-radius: 0 !important;
           border-top-right-radius: 0 !important;
-        }
+}
       }
     }
     .tabContent {

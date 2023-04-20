@@ -15,6 +15,7 @@ export default function Slider({ slider }) {
           modules={[Pagination]}
           pagination={{ clickable: true }}
           allowTouchMove={false}
+          key={i18n.dir()}
         >
           {(slider?.slides || []).map((item) => (
           <SwiperSlide key={item?.id}  >

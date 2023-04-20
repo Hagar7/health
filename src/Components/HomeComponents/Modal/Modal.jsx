@@ -76,7 +76,6 @@ export default function Modal() {
                   <div className="col-md-6">
                     <div className={`${style.inputData}  `}>
                       <select className="form-control ">
-                        <option value="default">{t("selectplace")}</option>
                         <option value="male">{t("maleplace")}</option>
                         <option value="female">{t("femaleplace")}</option>
                       </select>

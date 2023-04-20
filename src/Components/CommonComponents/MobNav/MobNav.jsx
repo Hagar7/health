@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import style from "./MobNav.module.scss";
 import MobModel from "../../HomeComponents/MobModel/MobModel";
 
-export default function MobileNav({setLang}) {
+export default function MobileNav({ setLang }) {
   const [isOpen, setisOpen] = useState(false);
   const [t, i18n] = useTranslation();
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+  }, [isOpen]);
   const toggle = () => {
     setisOpen(!isOpen);
   };
@@ -48,30 +51,30 @@ export default function MobileNav({setLang}) {
           </div>
           <div className={`${style.center}`}>
             {i18n.language === "en" && (
-              <Link
+              <NavLink
                 className="nav-link"
                 onClick={() => {
                   localStorage.setItem("lang", "ar");
                   i18n.changeLanguage("ar");
                   setLang("ar");
-                  setisOpen(false)
+                  setisOpen(false);
                 }}
               >
                 <span className={`${style.last}`}>عربي</span>
-              </Link>
+              </NavLink>
             )}
             {i18n.language === "ar" && (
-              <Link
+              <NavLink
                 className="nav-link"
                 onClick={() => {
                   localStorage.setItem("lang", "en");
                   i18n.changeLanguage("en");
                   setLang("en");
-                  setisOpen(false)
+                  setisOpen(false);
                 }}
               >
                 <span>English</span>
-              </Link>
+              </NavLink>
             )}
           </div>
           <div className={`${style.icon}`}>
@@ -88,52 +91,95 @@ export default function MobileNav({setLang}) {
         >
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="/" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="/"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("homeMenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="about" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="about"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("aboutmenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="initiative" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="initiative"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("Inmenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="projects" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="projects"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("healthmeny")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="news" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="news"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("newsMenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="publication" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="publication"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("pubMenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="career" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="career"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("carrerMenu")}
-            </Link>
+            </NavLink>
           </div>
           <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
-            <Link to="contact" className={`${style.links} nav-link`} onClick={()=>setisOpen(false)}>
+            <NavLink
+              to="contact"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
               {t("contactmenu")}
-            </Link>
+            </NavLink>
           </div>
+          <div className={`${style.item}`}>
+            <i className="fa-solid fa-chevron-right"></i>
+            <NavLink
+              to="donation"
+              className={`${style.links} nav-link`}
+              onClick={() => setisOpen(false)}
+            >
+              {t("donation")}
+            </NavLink>
+          </div>
+
         </div>
 
         <div

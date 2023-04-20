@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.contactMap {
+  background-color: #1c476c;
+  color: #fff;
+  min-height: 45vh;
+}
+.contactMap .info {
+  display: flex;
+  margin: 0 0px 20px 100px;
+}
+.contactMap .info img {
+  width: 5%;
+  margin-right: 20px;
+  align-self: flex-start;
+}
+.contactMap .info .items h5 {
+  font-family: "title";
+}
+.contactMap .info .items p {
+  font-family: "calibri";
+  width: 300px;
+}
+.contactMap .map {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.contactMap .map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+body[dir=rtl] .contactMap {
+  min-height: 45vh;
+}
+body[dir=rtl] .contactMap .info {
+  display: flex;
+  margin: 0 100px 20px 0px;
+}
+body[dir=rtl] .contactMap .info img {
+  width: 5%;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+body[dir=rtl] .contactMap .info .items h5 {
+  font-family: "arabic";
+}
+body[dir=rtl] .contactMap .info .items p {
+  font-family: "arabic";
+  width: 330px;
+}
+body[dir=rtl] .contactMap .map {
+  height: 450px;
+  margin: 0;
+  padding: 0;
+}
+body[dir=rtl] .contactMap .map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .contactMap {
+    min-height: 50vh;
+  }
+  .contactMap .info {
+    margin: 0 0px 20px 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contactMap {
+    min-height: 50vh;
+  }
+  .contactMap .info {
+    margin: 0 0px 20px 20px;
+  }
+  body[dir=rtl] .contactMap {
+    min-height: 50vh;
+  }
+  body[dir=rtl] .contactMap .info {
+    margin: 0 0px 20px 0px;
+  }
+  body[dir=rtl] .contactMap .info .items p {
+    font-family: "arabic";
+    width: 290px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contactMap {
+    min-height: 85vh;
+  }
+  .contactMap .info {
+    margin: 0 0px 20px 10px;
+  }
+}/*# sourceMappingURL=ContactMap.module.css.map */

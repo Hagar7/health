@@ -1,26 +1,25 @@
 @font-face {
-    font-family: "Fonty";
-    src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
-  }
-  @font-face {
-    font-family: "title";
-    src: url("../src/Fonts/futura\ medium\ bt.ttf");
-  }
-  @font-face {
-    font-family: "calibri";
-    src: url("../src/Fonts/Calibri\ Regular.ttf");
-  }
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura\ medium\ bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri\ Regular.ttf");
+}
 
-  @font-face {
-    font-family: "arabic";
-    src: url("../src/Fonts/HSDream-Regular-1.otf");
-  }
-  * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
-
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
 //   varibales
 $imgWidth: 50px;
@@ -31,90 +30,84 @@ $textColor: #fff;
 $DarkBlueColor: #1c476c;
 $mainFont: "Montserrat", sans-serif;
 $newFont: "Poppins", sans-serif;
-$direction:ltr;
-$left:left;
-$right:right;
-$weight:500;
+$direction: ltr;
+$left: left;
+$right: right;
+$weight: 500;
 
-body[dir='ltr']{
-  $direction:ltr;
+body[dir="ltr"] {
+  $direction: ltr;
   $mainFont: "title";
-  font-family:"title";
+  font-family: "title";
 }
 
-body[dir='rtl']{
-  $direction:rtl;
+body[dir="rtl"] {
+  $direction: rtl;
   font-size: 1.2rem;
   font-family: "arabic" !important;
 }
 
-
-
 @mixin borderRadius($x) {
-    border-radius: $x;
-    -webkit-border-radius: $x;
-    -moz-border-radius: $x;
-    -ms-border-radius: $x;
-    -o-border-radius: $x;
+  border-radius: $x;
+  -webkit-border-radius: $x;
+  -moz-border-radius: $x;
+  -ms-border-radius: $x;
+  -o-border-radius: $x;
 }
 
 @mixin transition {
-    transition: 1s all ease;
-    -webkit-transition: 1s all ease;
-    -moz-transition: 1s all ease;
-    -ms-transition: 1s all ease;
-    -o-transition: 1s all ease;
-  }
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
 
+.hoverClr {
+  color: $SecMainColor !important;
+}
+.orange:hover {
+  color: $SecMainColor  !important;
+}
 
-  .hoverClr {
-    color: $mainColor !important;
-  }
-  .nav-tabs .nav-link{
-    border: none !important;
-    color: $DarkBlueColor !important;
-  }
-  .nav-link:hover{
-    color: #e85530 !important;
-  }
-  .nav-tabs.active .nav-link.active{
-    color: #e85530 !important;
-     width: 100%;
-   }
+.nav-tabs .nav-link {
+  border: none !important;
+  color: $DarkBlueColor !important;
+}
 
-
+.nav-tabs .nav-link.active {
+  color: #e85530 !important;
+}
 
 //large screen
-@media screen and (min-width: 1280px) {
-    .mobNav,
-    .mobBar {
-      display: none !important;
-    }
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
   }
-  
-  @media screen and (max-width: 767px) {
-    .navy,
-    .topBar {
-      display: none !important;
-    }
-    .navy {
-      display: none !important;
-    }
-    .mainBig{
-      display: none !important;
-      }
-  
-  }
-  
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .navy,
-    .topBar {
-      display: none !important;
-    }
-    .mainBig{
-      display: none !important;
-      }
-  }
-  
+}
 
-  
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar {
+    span {
+      font-size: 12px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topBar {
+    span {
+      font-size: 8px !important;
+    }
+  }
+}
+

@@ -27,20 +27,24 @@ export default function HomeActivity({activites}) {
         </div>
         <div className="shapeTwo">
           <Swiper
+          key={i18n.dir()}
             modules={[Navigation, Pagination]}
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-              768: {
-                width: 768,
+              767: {
                 slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
               },
               991: {
-                width: 991,
-                slidesPerView: 1,
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
               },
               1280: {
-                width: 1280,
                 slidesPerView: 2,
               },
             }}

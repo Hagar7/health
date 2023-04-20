@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.main {
+  padding: 60px 0;
+  background-color: #F2F2F2;
+  width: 100%;
+  min-height: 100vh;
+}
+.main .head {
+  border-bottom: 0.5px solid rgba(28, 71, 108, 0.2);
+}
+.main .head h2 {
+  font-size: 45px;
+  color: #1c476c;
+}
+
+body[dir=rtl] .main .head h2 {
+  font-family: "arabic";
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    padding: 60px 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    min-height: 60vh;
+    margin-top: 0px;
+  }
+  .main .head {
+    border-bottom: 0.5px solid rgba(28, 71, 108, 0.2);
+  }
+  .main .head h2 {
+    font-size: 40px;
+    color: #1c476c;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding: 30px 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 0px;
+  }
+  .main .head {
+    border-bottom: 0.5px solid rgba(28, 71, 108, 0.2);
+  }
+  .main .head h2 {
+    font-size: 25px;
+    color: #1c476c;
+  }
+}/*# sourceMappingURL=Form.module.css.map */

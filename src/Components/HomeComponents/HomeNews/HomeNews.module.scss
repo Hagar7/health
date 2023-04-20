@@ -42,7 +42,8 @@
   .item {
     padding-top: 40px;
     img {
-      width: 100%;
+      width: 90%;
+      height: 300px;
       @include borderRadius(20px);
     }
     h6 {

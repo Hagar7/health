@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import style from "./TopBar.module.scss";
 
 export default function TopBar({ setLang }) {
@@ -14,15 +14,26 @@ export default function TopBar({ setLang }) {
         <span>{t("phone")}</span>
       </div>
       <div className={`${style.right}`}>
-        <Link to="career" className="nav-link">
+        <NavLink to="career" className={({ isActive }) =>
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
+            }>
           <span className={`${style.lastar}`}>{t("carrerMenu")}</span>
-        </Link>
-        <Link to="contact" className="nav-link">
+        </NavLink>
+        <NavLink to="contact" className={({ isActive }) =>
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
+            }>
           <span>{t("contactmenu")}</span>
-        </Link>
+        </NavLink>
+        <NavLink to="donation" className={({ isActive }) =>
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
+            }>
+          <span>{t("donation")}</span>
+        </NavLink>
         {i18n.language === "en" && (
-          <Link
-            className="nav-link"
+          <NavLink
+          className={({ isActive }) =>
+          isActive ? " nav-link orange" : "nav-link orange"
+        }
             onClick={() => {
               localStorage.setItem("lang", "ar");
               i18n.changeLanguage("ar");
@@ -30,11 +41,13 @@ export default function TopBar({ setLang }) {
             }}
           >
             <span className={`${style.last}`}>عربي</span>
-          </Link>
+          </NavLink>
         )}
         {i18n.language === "ar" && (
-          <Link
-            className="nav-link"
+          <NavLink
+          className={({ isActive }) =>
+          isActive ? " nav-link orange" : "nav-link orange"
+        }
             onClick={() => {
               localStorage.setItem("lang", "en");
               i18n.changeLanguage("en");
@@ -42,7 +55,7 @@ export default function TopBar({ setLang }) {
             }}
           >
             <span>English</span>
-          </Link>
+          </NavLink>
         )}
       </div>
     </div>

@@ -17,8 +17,10 @@ export default function Publication() {
   return (
    <>
    <AnimatedRoutes/>
+   <div className="container-fluid px-0 bg-white">
    <PubBanner banner={data?.banner}/>
    <Pub publications={data?.publications}/>
+   </div>
    </>
   )
 }

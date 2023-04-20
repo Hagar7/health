@@ -5,6 +5,7 @@ import style from "./HomeAbout.module.scss";
 
 export default function HomeAbout({ about }) {
   const [t, i18n] = useTranslation();
+
   return (
     <div className={`${style.mainAbout}`}>
       <div className="container">
@@ -51,7 +52,7 @@ export default function HomeAbout({ about }) {
                     ""
                   )}
                   {about?.btn2Text ? (
-                    <Link>
+                   
                       <button
                         className={`${style.two} btn btn-primary`}
                         data-bs-toggle="modal"
@@ -65,20 +66,18 @@ export default function HomeAbout({ about }) {
                           <i className="fa-solid fa-chevron-left"></i>
                         )}
                       </button>
-                    </Link>
+                   
                   ) : (
                     ""
                   )}
                 </div>
               </div>
-
               {/* modal */}
-
               <div className={`${style.aboutModal}`}>
                 <div
-                  className={`${style.modalBody} modal fade modal-lg`}
+                  className={`${style.modalBody} modal fade modal-xl`}
                   id="exampleModal3"
-                  tabIndex={-1}
+                   tabIndex={-1}
                   aria-labelledby="exampleModalLabel"
                   aria-hidden="true"
                 >
@@ -95,14 +94,17 @@ export default function HomeAbout({ about }) {
                       </div>
                       <div className="modal-body">
                         <ReactPlayer
+                            width="50%"
+                            height="50%"
                           url={about?.btn1Link}
                           controls
                           playing={true}
                           muted
                           volume={1}
                           autoPlay
-                          className={`${style.myvide}`}
+                          className={`${style.myvideo}`}
                         />
+                       
                       </div>
                     </div>
                   </div>

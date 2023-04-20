@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.mainMethology {
+  min-height: 100vh;
+  padding: 60px 0;
+  background-color: #F8F8F8;
+}
+.mainMethology .head {
+  border-bottom: 0.5px solid rgba(28, 71, 108, 0.2);
+}
+.mainMethology .head h2 {
+  font-size: 45px;
+  color: #1c476c;
+}
+.mainMethology .item {
+  margin: 50px auto;
+  background-color: #F2F2F2;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.mainMethology .item .itemUp {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainMethology .item .itemUp .info {
+  padding-top: 40px;
+  width: 26%;
+  cursor: pointer;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
+.mainMethology .item .itemUp .info:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.mainMethology .item .itemUp .info .img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 160px;
+  width: 160px;
+}
+.mainMethology .item .itemUp .info .img img {
+  width: 70%;
+}
+.mainMethology .item .itemUp .info h6 {
+  margin-top: 15px;
+  color: #1c476c;
+  font-size: 18.2px;
+  text-align: center;
+}
+.mainMethology .item .itemUp .modalMethology {
+  margin-bottom: 50px;
+}
+.mainMethology .item .itemUp .modalMethology .contentActivity {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+.mainMethology .item .itemUp .modalMethology .contentActivity h1 {
+  text-align: center !important;
+  color: #1c476c;
+  font-family: "title";
+  font-size: 25px;
+}
+.mainMethology .item .itemUp .modalMethology .contentActivity .headerActivity {
+  justify-content: flex-end;
+  border-bottom: 1px solid transparent !important;
+}
+.mainMethology .item .itemUp .modalMethology .contentActivity .headerActivity i {
+  color: #e85530;
+  font-size: 35px;
+  cursor: pointer;
+}
+.mainMethology .item .itemUp .modalMethology .contentActivity p {
+  text-align: center;
+  color: #1c476c;
+  font-family: "title";
+}
+
+body[dir=rtl] .mainMethology {
+  font-family: "arabic";
+}
+body[dir=rtl] .mainMethology .head h2 {
+  font-family: "arabic";
+}
+body[dir=rtl] .mainMethology .item .itemUp .info h6 {
+  font-family: "arabic";
+}
+body[dir=rtl] .mainMethology .item .itemUp .modalMethology .contentActivity h1 {
+  font-family: "arabic";
+}
+body[dir=rtl] .mainMethology .item .itemUp .modalMethology .contentActivity p {
+  font-family: "arabic";
+}
+
+@media screen and (max-width: 767px) {
+  .mainMethology {
+    min-height: 70vh;
+  }
+  .mainMethology .head h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mainMethology .item {
+    margin: 30px auto;
+    height: 330px;
+    width: 330px;
+  }
+  .mainMethology .item .itemUp .info {
+    padding-top: 40px;
+    width: 26%;
+    cursor: pointer;
+  }
+  .mainMethology .item .itemUp .info .img {
+    height: 80px;
+    width: 80px;
+  }
+  .mainMethology .item .itemUp .info .img img {
+    width: 60%;
+  }
+  .mainMethology .item .itemUp .info h6 {
+    font-size: 0.8rem;
+  }
+  .mainMethology .item .itemUp .modalMethology {
+    margin-bottom: 50px;
+  }
+  .mainMethology .item .itemUp .modalMethology .contentActivity h1 {
+    text-align: center !important;
+    color: #1c476c;
+    font-family: "title";
+    font-size: 25px;
+  }
+  .mainMethology .item .itemUp .modalMethology .contentActivity .headerActivity {
+    justify-content: flex-end;
+    border-bottom: 1px solid transparent !important;
+  }
+  .mainMethology .item .itemUp .modalMethology .contentActivity .headerActivity i {
+    color: #e85530;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .mainMethology .item .itemUp .modalMethology .contentActivity p {
+    text-align: center;
+    color: #1c476c;
+    font-family: "title";
+  }
+  body[dir=rtl] .mainMethology {
+    min-height: 70vh;
+  }
+  body[dir=rtl] .mainMethology .head h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  body[dir=rtl] .mainMethology .item .itemUp .info h6 {
+    font-family: "arabic";
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mainMethology {
+    min-height: 70vh;
+  }
+  .mainMethology .head h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mainMethology .item {
+    margin: 40px auto;
+    height: 630px;
+    width: 630px;
+  }
+  body[dir=rtl] .mainMethology {
+    min-height: 70vh;
+  }
+  body[dir=rtl] .mainMethology .head h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  body[dir=rtl] .mainMethology .item .itemUp .info h6 {
+    font-family: "arabic";
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=Methology.module.css.map */

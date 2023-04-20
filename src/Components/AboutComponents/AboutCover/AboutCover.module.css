@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+}
+.cover .overlay {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(18, 18, 19, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cover .overlay .caption {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #eeeeee;
+  text-align: center;
+}
+.cover .overlay .caption h4 {
+  font-size: 35px;
+}
+.cover .overlay .caption .one {
+  margin: 20px;
+  height: 50px;
+  width: 180px;
+  background-color: #e85530;
+  border: 1px solid #e85530;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover .overlay .caption .one:hover {
+  transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px);
+  -moz-transform: translate(0px, 10px);
+  -ms-transform: translate(0px, 10px);
+  -o-transform: translate(0px, 10px);
+}
+.cover .overlay .caption .one i {
+  margin-left: 10px;
+}
+.cover .overlay .caption p {
+  font-size: 15px;
+  font-family: "calibri";
+}
+
+body[dir=rtl] .cover .overlay .caption h4 {
+  font-size: 35px;
+  font-family: "arabic";
+}
+body[dir=rtl] .cover .overlay .caption .one {
+  font-family: "arabic";
+}
+body[dir=rtl] .cover .overlay .caption .one i {
+  margin-right: 10px;
+}
+body[dir=rtl] .cover .overlay .caption p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: "arabic";
+}
+
+@media screen and (max-width: 1280px) {
+  .cover .overlay .caption p {
+    font-size: 13px;
+    font-family: "calibri";
+  }
+  .cover .overlay .caption .one {
+    margin: 0px;
+  }
+  body[dir=rtl] .cover .overlay .caption p {
+    font-size: 13px;
+    font-family: "calibri";
+  }
+}
+@media screen and (max-width: 560px) {
+  .cover .overlay .caption .one {
+    margin: 0px;
+  }
+  .cover .overlay .caption p {
+    font-size: 10px;
+    font-family: "calibri";
+  }
+}/*# sourceMappingURL=AboutCover.module.css.map */

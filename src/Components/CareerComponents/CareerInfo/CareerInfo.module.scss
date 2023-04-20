@@ -1,0 +1,119 @@
+@import "../../../index.scss";
+
+
+
+  .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+          border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+          h2{
+              font-size: 45px;
+              color: $DarkBlueColor;
+          }
+      }
+      .content{
+        padding-top: 30px;
+
+        p{
+            font-size: 27px;
+            font-family: "calibri";
+            color: $DarkBlueColor;
+        }
+        span{
+            display: block;
+            font-size: 26px;
+            font-family: "calibri";
+            color: $DarkBlueColor;
+        }
+      }
+    
+  }
+
+
+body[dir='rtl']{
+.main{
+  padding: 60px 0 ;
+  min-height: 50vh;
+  font-family: "arabic";
+  .head{
+      border-bottom: 0.5px solid rgb(28, 71, 108,0.2);
+      h2{
+          font-size: 45px;
+          color: $DarkBlueColor;
+      }
+  }
+  .content{
+    padding-top: 30px;
+
+    p{
+        font-family: "arabic";
+    }
+    span{
+        font-family: "arabic";
+    }
+  }
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 55vh;
+    .head{
+      h2{
+          font-size: 30px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 50vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main{
+    padding: 60px 0 ;
+    min-height: 35vh;
+    .head{
+      h2{
+          font-size: 40px;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+  }
+  }
+  body[dir="rtl"] {
+    .main{
+      padding: 60px 0 ;
+      min-height: 35vh;
+      .head{
+        h2{
+        text-align: center;
+        margin-bottom: 10px;
+        }
+    }
+    }
+  }
+}

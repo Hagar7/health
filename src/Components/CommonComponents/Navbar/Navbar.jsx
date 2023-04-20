@@ -23,7 +23,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span className={`${style.lasten}`}>{t("homeMenu")}</span>
@@ -31,7 +31,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="about"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span>{t("aboutmenu")}</span>
@@ -39,7 +39,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="initiative"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span>{t("Inmenu")}</span>
@@ -47,7 +47,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="projects"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span>{t("healthmeny")}</span>
@@ -55,7 +55,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="news"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span>{t("newsMenu")}</span>
@@ -63,7 +63,7 @@ export default function Navbar({ setLang }) {
           <NavLink
             to="publication"
             className={({ isActive }) =>
-              isActive ? " nav-link hoverClr" : "nav-link"
+              isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }
           >
             <span className={`${style.last}`}>{t("pubMenu")}</span>

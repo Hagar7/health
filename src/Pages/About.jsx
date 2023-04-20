@@ -26,7 +26,7 @@ export default function About() {
   return (
     <>
       <AnimatedRoutes />
-      <Banner />
+      <Banner banner={data?.banner}/>
       <SehtnaStart sehetnaStart={data?.sehetnaStart} />
       <Founder founder={data?.founder} />
       <Mission qualities={data?.qualities.cards} />

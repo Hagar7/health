@@ -27,7 +27,7 @@ export default function HomeProject({project}) {
         <div className={`${style.content}`} style={{ backgroundImage: `url(${project?.background})` }}>
           <div className={`${style.caption}`}>
             <h3>{project?.title}</h3>
-            <Link to={`/projects/51`}>
+            <Link to="projects">
               <button className={`${style.myBtn} btn btn-primary`}>
               {t("buttonLearn")}   
               {i18n.language === "en" && 
@@ -43,7 +43,7 @@ export default function HomeProject({project}) {
           </div>
         </div>
         <div className={`${style.divyflex} text-center`}>
-          <Link>
+          <Link to="projects">
             <button className={`${style.btnflex} btn btn-primary`}>
             {t("projectBtn")}
             {i18n.language === "en" && 

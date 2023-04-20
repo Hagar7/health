@@ -1,0 +1,115 @@
+@import "../../../index.scss";
+
+
+.contactMap{
+    background-color: $DarkBlueColor;
+    color: $textColor;
+    min-height: 45vh;
+    .info{
+        display: flex;
+        margin: 0 0px 20px 100px;
+        img{
+            width: 5%;
+            margin-right: 20px;
+            align-self: flex-start;
+        }
+        .items{
+            h5{
+                font-family: "title";
+            }
+            p{
+                font-family: "calibri";
+                width: 300px;
+            }
+        }
+    }
+    .map{
+        height:400px;
+        margin: 0;
+        padding: 0;
+        iframe{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
+
+body[dir='rtl']{
+    .contactMap{
+
+        min-height: 45vh;
+        .info{
+            display: flex;
+            margin: 0 100px 20px 0px;
+            img{
+                width: 5%;
+                margin-left: 20px;
+                align-self: flex-start;
+            }
+            .items{
+                h5{
+                    font-family: "arabic";
+                }
+                p{
+                    font-family: "arabic";
+                    width: 330px;
+                }
+            }
+        }
+        .map{
+            height:450px;
+            margin: 0;
+            padding: 0;
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }  
+}
+
+@media screen and (min-width:1024px){
+    .contactMap{
+        min-height: 50vh;
+        .info{
+            margin: 0 0px 20px 20px;
+        }
+    } 
+}
+
+@media screen and (max-width: 991px) {
+    .contactMap{
+        min-height: 50vh;
+        .info{
+            margin: 0 0px 20px 20px;
+        }
+    } 
+    body[dir='rtl']{
+        .contactMap{
+            min-height: 50vh;
+            .info{
+                margin: 0 0px 20px 0px;
+                .items{
+                    p{
+                        font-family: "arabic";
+                        width: 290px;
+                    }
+                }
+            }
+        }  
+    }  
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .contactMap{
+        min-height: 85vh;
+        .info{
+            margin: 0 0px 20px 10px;
+        }
+    }
+}

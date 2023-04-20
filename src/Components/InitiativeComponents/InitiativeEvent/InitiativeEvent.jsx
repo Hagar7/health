@@ -8,7 +8,7 @@ export default function InitiativeEvent({ journey, events, eventSection }) {
   return (
     <div className={`${style.mainEvent}`}>
       <div className="container">
-        <div className={`${style.eventInfo}`}>
+        <div className={`${style.eventInfo} `}>
           <div
             className={`${style.eventTabs} nav nav-tabs`}
             id="myTab"
@@ -52,7 +52,7 @@ export default function InitiativeEvent({ journey, events, eventSection }) {
               aria-labelledby="journey-tab"
               tabIndex={0}
             >
-              <div className="container">
+              <div className="container-fluid px-0">
                 <div className={`${style.journeyContent}`}>
                   <p
                     dangerouslySetInnerHTML={{ __html: journey?.description }}
@@ -61,7 +61,6 @@ export default function InitiativeEvent({ journey, events, eventSection }) {
                 </div>
               </div>
             </div>
-
             <div
               className={`${style.myEvent} tab-pane fade`}
               id="events-tab-pane"

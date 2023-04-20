@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  .mobLeft {
+    .mobLeft {
     width: 30%;
     padding: 10px;
     .logo {
@@ -23,13 +23,17 @@
   }
 }
 .mobBar {
+  
   background-color: $DarkBlueColor;
   height: 0;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   width: 100%;
   top: 0;
   padding: 0px 20px;
+  bottom: 0;
+ 
+ 
   .head {
     display: flex;
     justify-content: space-between;

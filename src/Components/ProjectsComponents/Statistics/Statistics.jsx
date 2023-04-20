@@ -7,28 +7,48 @@ import "swiper/css/pagination";
 import style from './Statistics.module.scss'
 import Counter from '../../HomeComponents/Counter/Counter';
 import  './style.css'
+import { useTranslation } from 'react-i18next';
 
 export default function Statistics({statistics}) {
+  const [t, i18n] = useTranslation();
   return (
     <div className={`${style.main}`}>
     <div className="container">
       <div className="shapeThree">
         <Swiper
+        key={i18n.dir()}
           modules={[Navigation, Pagination]}
-          spaceBetween={70}
+       
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
+            640: {
+              
+              slidesPerView: 1,
+            },
             768: {
-              width: 768,
+            
               slidesPerView: 1,
             },
             769: {
-              width: 991,
+              
+              slidesPerView: 1,
+            },
+            991: {
+             
+              slidesPerView: 1,
+              
+            },
+            1024:{
+            
               slidesPerView: 2,
             },
             1280: {
-              width: 1280,
+           
+              slidesPerView: 2,
+            },
+            1380: {
+            
               slidesPerView: 3,
             },
           }}
@@ -38,6 +58,7 @@ export default function Statistics({statistics}) {
 
          {statistics?.map((item)=>
           <SwiperSlide key={item.id}>
+            <div className="mainSwiper">
           <div className="shapeContainer">
             <div className="counter">
               <Counter end={item.count} start={0} timer={50} />
@@ -46,6 +67,7 @@ export default function Statistics({statistics}) {
               <h3>{item.title}</h3>
             </div>
           </div> 
+          </div>
         </SwiperSlide>
          )}
          

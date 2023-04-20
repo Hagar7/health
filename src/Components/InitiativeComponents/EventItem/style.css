@@ -16,8 +16,8 @@
 
 .PhotoImg .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 250px;
+  width: 250px;
+    height: 200px;
   object-fit: cover;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -70,45 +70,64 @@ body[dir="rtl"] .PhotoImg button i {
   border: 1px solid #e85530;
 }
 
+@media screen and (max-width: 1024px) {
+  .PhotoImg .swiper {
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 30px;
+  }
+  .PhotoImg .swiper-horizontal > .PhotoImg .swiper-pagination-bullets,
+.PhotoImg .swiper-pagination-bullets.swiper-pagination-horizontal {
+top:96% !important;
+display: block;
+}
+.swiper-pagination-bullet-active {
+background-color:#e85530 ;
+height: 11px;
+width: 11px;
+}
+}
+
+@media screen and (max-width:991px){
+    .PhotoImg .swiper {
+        width: 100%;
+        min-height: 100%;
+        margin-bottom: 30px;
+      }
+      .PhotoImg .swiper-horizontal > .PhotoImg .swiper-pagination-bullets,
+.PhotoImg .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top:95.9% !important;
+  display: block;
+}
+.swiper-pagination-bullet-active {
+    background-color:#e85530 ;
+    height: 11px;
+    width: 11px;
+    }
+}
+
 @media screen and (max-width: 767px) {
-  .PhotoImg .swiper {
-    width: 100%;
-    min-height: 100%;
-    margin-bottom: 30px;
-  }
+ 
+  .PhotoImg  .swiper-slide img {
+    display: block;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 15px 20px 15px 0;
+}
   .PhotoImg .swiper-horizontal > .PhotoImg .swiper-pagination-bullets,
   .PhotoImg .swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 96% !important;
+    top:96% !important;
     display: block;
   }
-  .PhotoImg .swiper-pagination-bullet-active {
-    background-color: #e85530;
-    height: 11px;
-    width: 11px;
+  .swiper-pagination-bullet-active {
+      background-color:#e85530 ;
+      height: 11px;
+      width: 11px;
+      }
   }
-
-  body[dir="rtl"] .PhotoImg .swiper-slide img {
-    width: 90% !important;
-    margin-left: 15px;
-
-  }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .PhotoImg .swiper {
-    width: 100%;
-    min-height: 100%;
-    margin-bottom: 30px;
-  }
-  .PhotoImg .swiper-horizontal > .PhotoImg .swiper-pagination-bullets,
-  .PhotoImg .swiper-pagination-bullets.swiper-pagination-horizontal {
-    top: 96.3% !important;
-    display: block;
-  }
-  .PhotoImg .swiper-pagination-bullet-active {
-    background-color: #e85530;
-    height: 11px;
-    width: 11px;
-  }
-}

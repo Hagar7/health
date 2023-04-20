@@ -16,7 +16,7 @@
     "selectplace":"Choose ...",
     "maleplace":"male",
     "femaleplace":"female",
-    "phonePlace":"Phone",
+    "phonePlace":"Phone :",
     "emailPlace":"Email :",
     "msgPlace":"Proposed Areas Of Collaboration",
     "aboutTitle":"About",
@@ -46,5 +46,14 @@
     "back":"Back To Events",
     "gallery":"GALLERY",
     "video":"VIDEO",
-    "album":"GALLERY"
+    "album":"GALLERY",
+    "volunter":"VOLUNTEERING FORM",
+    "Education":"Education :",
+    "prev":"Previous Experience :",
+    "volunterMsg":"Message (less than 500 characters) :",
+    "help":"HOW CAN WE HELP YOU ?",
+    "donation":"DONATION",
+    "egp":"EGP",
+    "usd":"USD",
+    "amount":"Amount :"
 }

@@ -3,7 +3,7 @@
 .navy {
   position: absolute;
    z-index: 9999;
-  top: 50px;
+  top: 43px;
   left: 5%;
   background-color: #fff;
   width: 90%;
@@ -115,4 +115,83 @@ body[dir="rtl"] {
       }
     }
   }
+}
+
+
+
+
+//large screen
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navy,
+  .topBar {
+    display: none !important;
+  }
+  .navy {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .navy,
+  .topBar {
+    span {
+      font-size: 12px !important;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .navy,
+  .topBar {
+    span {
+      font-size: 8px !important;
+    }
+  }
+ .navy {
+    .logo {
+      width: 7%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .listItems {
+      span {
+        margin-right: 10px !important;
+        font-size: 12px !important;
+        &::after {
+          height: 15px !important;
+          right: -5px;
+        }
+      }
+    }
+  } 
+ 
+}
+@media screen and (max-width: 1024px) {
+  .navy {
+    .logo {
+      width: 9%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .listItems {
+      span {
+        font-size: 10px !important;
+        &::after {
+          height: 19px;
+        }
+      }
+    }
+  } 
 }

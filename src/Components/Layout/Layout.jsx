@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import Navbar from "../CommonComponents/Navbar/Navbar";
 import MobileNav from "../CommonComponents/MobNav/MobNav";
 import Footer from "../CommonComponents/Footer/Footer";
@@ -24,6 +24,7 @@ export default function Layout() {
       <Outlet></Outlet>
       <Footer />
       <CopyRight />
+      <ScrollRestoration/>
     </>
   );
 }

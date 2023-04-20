@@ -1,0 +1,448 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.mainProjects {
+  min-height: 70vh;
+  padding: 60px 0 40px;
+}
+.mainProjects .head {
+  border-bottom: 0.5px solid rgba(28, 71, 108, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+.mainProjects .head h2 {
+  font-size: 45px;
+  color: #1c476c;
+}
+.mainProjects .head .two {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  height: 60px;
+  width: 180px;
+  margin: 0 20px 20px 0;
+  background-color: #fff;
+  color: #e85530;
+  border: 1px solid #1c476c;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+}
+.mainProjects .head .two:hover {
+  transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px);
+  -moz-transform: translate(0px, 10px);
+  -ms-transform: translate(0px, 10px);
+  -o-transform: translate(0px, 10px);
+}
+.mainProjects .head .two i {
+  margin-left: 10px;
+}
+.mainProjects .content {
+  margin: 60px 0;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainProjects .content .caption {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+.mainProjects .content .caption h3 {
+  margin: 20px 40px;
+  font-size: 3rem;
+  color: #fff;
+  width: 30%;
+}
+.mainProjects .content .caption .myBtn {
+  margin-left: 60px;
+  margin-top: 140px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  height: 50px;
+  width: 170px;
+  background-color: #e85530;
+  color: #fff;
+  border: 1px solid #e85530;
+  transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
+.mainProjects .content .caption .myBtn:hover {
+  transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px);
+  -moz-transform: translate(0px, 10px);
+  -ms-transform: translate(0px, 10px);
+  -o-transform: translate(0px, 10px);
+}
+.mainProjects .content .caption .myBtn i {
+  margin-left: 10px;
+}
+.mainProjects .divyflex {
+  display: none;
+}
+
+body[dir=rtl] .mainProjects .head .two i {
+  margin-right: 10px;
+}
+body[dir=rtl] .mainProjects .content .caption h3 {
+  margin: 20px 40px;
+  font-size: 3rem;
+  color: #fff;
+  width: 30%;
+}
+body[dir=rtl] .mainProjects .content .caption .myBtn {
+  margin-right: 60px;
+  margin-top: 90px;
+}
+body[dir=rtl] .mainProjects .content .caption .myBtn i {
+  margin-right: 10px;
+}
+body[dir=rtl] .mainProjects .divyflex {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mainProjects {
+    min-height: 50vh;
+    padding: 60px 0 40px;
+  }
+  .mainProjects .head {
+    justify-content: center;
+  }
+  .mainProjects .head h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mainProjects .head .two {
+    display: none;
+  }
+  .mainProjects .content {
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+  }
+  .mainProjects .content .caption {
+    display: flex;
+  }
+  .mainProjects .content .caption h3 {
+    margin: 20px 40px;
+    font-size: 1.7rem;
+    color: #fff;
+    width: 30%;
+  }
+  .mainProjects .content .caption .myBtn {
+    display: none;
+  }
+  .mainProjects .divyflex {
+    display: block;
+  }
+  .mainProjects .divyflex .btnflex {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin: 0 20px 20px 0;
+    height: 60px;
+    width: 200px;
+    background-color: #1c476c;
+    border: 1px solid #1c476c;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    font-size: 20px;
+  }
+  .mainProjects .divyflex .btnflex i {
+    color: #e85530;
+  }
+  .mainProjects .divyflex .btnflex:hover {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+  .mainProjects .divyflex .btnflex i {
+    margin-left: 5px;
+  }
+  body[dir=rtl] .mainProjects {
+    font-family: "arabic";
+  }
+  body[dir=rtl] .mainProjects .head {
+    text-align: center;
+  }
+  body[dir=rtl] .mainProjects .head h2 {
+    font-size: 35px;
+    font-family: "arabic";
+  }
+  body[dir=rtl] .mainProjects .head .two {
+    display: none;
+  }
+  body[dir=rtl] .mainProjects .content {
+    width: 80%;
+    margin: 50px auto;
+    height: 300px;
+  }
+  body[dir=rtl] .mainProjects .content .caption {
+    display: flex;
+  }
+  body[dir=rtl] .mainProjects .content .caption h3 {
+    margin: 20px 10px;
+    font-size: 2.1rem;
+    width: 90%;
+    text-align: center;
+    font-family: "arabic";
+  }
+  body[dir=rtl] .mainProjects .content .caption .myBtn {
+    display: none;
+  }
+  body[dir=rtl] .mainProjects .divyflex {
+    display: block;
+  }
+  body[dir=rtl] .mainProjects .divyflex .btnflex {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin: 0 20px 20px 0;
+    height: 60px;
+    width: 180px;
+    background-color: #1c476c;
+    border: 1px solid #1c476c;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    font-size: 20px;
+  }
+  body[dir=rtl] .mainProjects .divyflex .btnflex i {
+    color: #e85530;
+  }
+  body[dir=rtl] .mainProjects .divyflex .btnflex i {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .mainProjects {
+    min-height: 50vh;
+    padding: 60px 0 40px;
+  }
+  .mainProjects .head h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .mainProjects .head .two {
+    display: none;
+  }
+  .mainProjects .content {
+    width: 90%;
+    margin: 50px auto;
+    height: 300px;
+  }
+  .mainProjects .content .caption {
+    display: flex;
+  }
+  .mainProjects .content .caption h3 {
+    margin: 20px 40px;
+    font-size: 2.8rem;
+    color: #fff;
+    width: 90%;
+  }
+  .mainProjects .content .caption .myBtn {
+    display: none;
+  }
+  .mainProjects .divyflex {
+    display: block;
+  }
+  .mainProjects .divyflex .btnflex {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    margin: 0 20px 20px 0;
+    height: 60px;
+    width: 200px;
+    background-color: #1c476c;
+    border: 1px solid #1c476c;
+    transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    -ms-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    font-size: 18px;
+  }
+  .mainProjects .divyflex .btnflex i {
+    color: #e85530;
+  }
+  .mainProjects .divyflex .btnflex:hover {
+    transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+  }
+  .mainProjects .divyflex .btnflex i {
+    margin-left: 10px;
+  }
+  body[dir=rtl] .mainProjects {
+    font-family: "arabic";
+  }
+  body[dir=rtl] .mainProjects .head {
+    text-align: center;
+  }
+  body[dir=rtl] .mainProjects .head h2 {
+    font-size: 35px;
+    font-family: "arabic";
+  }
+  body[dir=rtl] .mainProjects .head .two {
+    display: none;
+  }
+  body[dir=rtl] .mainProjects .content {
+    width: 90%;
+    margin: 50px auto;
+    height: 300px;
+  }
+  body[dir=rtl] .mainProjects .content .caption {
+    display: flex;
+  }
+  body[dir=rtl] .mainProjects .content .caption h3 {
+    margin: 20px 40px;
+    font-size: 2.8rem;
+    color: #fff;
+    width: 90%;
+  }
+  body[dir=rtl] .mainProjects .content .caption .myBtn {
+    display: none;
+  }
+  body[dir=rtl] .mainProjects .divyflex {
+    display: block;
+  }
+  body[dir=rtl] .mainProjects .divyflex .btnflex i {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=HomeProject.module.css.map */

@@ -13,6 +13,7 @@ import { useTranslation } from "react-i18next";
 export default function EventItem({ images, closeGallery,title}) {
   const [opengallery, setOpenGallery] = useState(false);
   const [t, i18n] = useTranslation();
+  const [index, setIndex] = useState(0);
   return (
     <div className="PhotoImg">
       <button className={`${style.one} btn btn-primary`} onClick={closeGallery}>
@@ -24,40 +25,51 @@ export default function EventItem({ images, closeGallery,title}) {
       </button>
       <h3>{title}</h3>
       <Swiper
-        breakpoints={{
-          360: {
-            width: 360,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+      key={i18n.dir()}
+      breakpoints={{
+        360: {
+          slidesPerView: 1,
+          grid: {
+            fill: "row",
+            rows: 2,
           },
-          768: {
-            width: 768,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        768: {
+          slidesPerView: 1,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-          769: {
-            width: 769,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        769: {
+          slidesPerView: 1,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-          1280: {
-            width: 1280,
-            slidesPerView: 3,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        1024: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-        }}
+        },
+        1280: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+        1380: {
+          slidesPerView: 3,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+      }}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -67,16 +79,17 @@ export default function EventItem({ images, closeGallery,title}) {
       >
         {images?.map((image, index) => (
           <SwiperSlide key={index} onClick={() => setOpenGallery(true)}>
-            <img src={image} alt="event" />
+            <img src={image} alt="event" onClick={() => setIndex(index)}/>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <Lightbox
         open={opengallery}
+        index={index}
         close={() => setOpenGallery(false)}
-        slides={images?.map((image) => {
-          return { src: image };
+        slides={images?.map((image,index) => {
+          return { src: image,key: index};
         })}
         plugins={[Fullscreen, Slideshow]}
       />

@@ -56,7 +56,7 @@ export default function ProjectGallery({ gallery, video }) {
               aria-labelledby="gallery-tab"
               tabIndex={0}
             >
-              <div className="container">
+              <div className="container-fluid px-0">
                 <div className={`${style.galleyContent}`}>
                   <ProjectImage images={gallery?.images} />
                 </div>

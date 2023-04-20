@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Fonty";
+  src: url("../src/Fonts/Swiss-721-BT-Font.ttf");
+}
+@font-face {
+  font-family: "title";
+  src: url("../src/Fonts/futura medium bt.ttf");
+}
+@font-face {
+  font-family: "calibri";
+  src: url("../src/Fonts/Calibri Regular.ttf");
+}
+@font-face {
+  font-family: "arabic";
+  src: url("../src/Fonts/HSDream-Regular-1.otf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body[dir=ltr] {
+  font-family: "title";
+}
+
+body[dir=rtl] {
+  font-size: 1.2rem;
+  font-family: "arabic" !important;
+}
+
+.hoverClr {
+  color: #f07851 !important;
+}
+
+.nav-tabs .nav-link {
+  border: none !important;
+  color: #1c476c !important;
+}
+
+.nav-link:hover {
+  color: #e85530 !important;
+}
+
+.nav-tabs.active .nav-link.active {
+  color: #e85530 !important;
+  width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+  .mobNav,
+  .mobBar {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topBar {
+    display: none !important;
+  }
+  .mainBig {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .topBar span {
+    font-size: 12px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .topBar span {
+    font-size: 8px !important;
+  }
+}
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+.copy {
+  background-color: #144773;
+  padding: 30px 0 30px 0;
+}
+.copy .copyContainer {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+}
+.copy .copyContainer .item {
+  margin-bottom: 5px;
+}
+.copy .copyContainer .item h3 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+.copy .copyContainer .item .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 15px 0px;
+}
+.copy .copyContainer .item .social a {
+  color: #eee;
+  margin-left: 15px;
+  font-size: 35px;
+}
+
+.copyRight {
+  background-color: #144773;
+  padding: 0 0 5px 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+body[dir=rtl] .copy {
+  font-family: "arabic";
+}
+body[dir=rtl] .copyRight p {
+  font-family: "arabic";
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .copy .copyContainer {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+    width: 90%;
+  }
+  .copy .copyContainer .item {
+    text-align: center;
+  }
+  .copyRight {
+    margin-top: -10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .copy .copyContainer {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+    width: 90%;
+  }
+  .copy .copyContainer .item {
+    text-align: center;
+  }
+  .copyRight {
+    margin-top: -10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .copy .copyContainer {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.3);
+    width: 90%;
+  }
+  .copy .copyContainer .item {
+    text-align: center;
+  }
+  .copyRight {
+    margin-top: -10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=CopyRight.module.css.map */

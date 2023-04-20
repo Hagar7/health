@@ -6,47 +6,67 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import { Grid, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./style.css";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectImage({ images}) {
   const [open, setOpen] = useState(false);
-
+  const [t, i18n] = useTranslation();
+  const [index, setIndex] = useState(0);
   return (
     <div className="proImg">
       <Swiper
-        breakpoints={{
-          360: {
-            width: 360,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+      key={i18n.dir()}
+      breakpoints={{
+        360: {
+          slidesPerView: 1,
+          grid: {
+            fill: "row",
+            rows: 2,
           },
-          768: {
-            width: 768,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        768: {
+          slidesPerView: 1,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-          769: {
-            width: 769,
-            slidesPerView: 1,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        769: {
+          slidesPerView: 1,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-          1280: {
-            width: 1280,
-            slidesPerView: 3,
-            grid: {
-              rows: 2,
-              fill: "row",
-            },
+        },
+        991: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: "row",
           },
-        }}
+        },
+        1024: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+        1280: {
+          slidesPerView: 2,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+        1380: {
+          slidesPerView: 3,
+          grid: {
+            rows: 2,
+            fill: "row",
+          },
+        },
+      }}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -56,11 +76,12 @@ export default function ProjectImage({ images}) {
       >
         {images?.map((item, index) => (
           <SwiperSlide onClick={() => setOpen(true)} key={index}>
-            <img src={item} alt="journey" />
+            <img src={item} alt="journey" onClick={() => setIndex(index)} />
           </SwiperSlide>
         ))}
       </Swiper>
       <Lightbox
+      index={index}
         open={open}
         close={() => setOpen(false)}
         slides={images?.map((image) => {

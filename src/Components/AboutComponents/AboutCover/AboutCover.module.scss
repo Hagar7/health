@@ -78,3 +78,49 @@ body[dir='rtl']{
         }
     }
 }
+
+
+@media screen and  (max-width:1280px){
+  .cover{
+    .overlay{
+        .caption{
+              p{
+                font-size: 13px;
+                font-family: "calibri";
+              }
+              .one {
+                margin: 0px;
+              }
+        }
+    }
+}
+body[dir='rtl']{
+  .cover{
+    .overlay{
+        .caption{
+              p{
+                font-size: 13px;
+                font-family: "calibri";
+              }
+        }
+    }
+}
+}
+}
+
+@media screen and  (max-width:560px){.cover{
+ 
+  .overlay{
+
+      .caption{
+     
+          .one {
+              margin: 0px;
+            }
+            p{
+              font-size: 10px;
+              font-family: "calibri";
+            }
+      }
+  }
+}}
