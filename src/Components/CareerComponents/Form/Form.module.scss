@@ -52,3 +52,10 @@ body[dir='rtl']{
         }
     }   
 }
+
+
+.msgAlert{
+    background-color: transparent !important;
+    color: $SecMainColor !important;
+    border: 1px solid transparent !important;
+}

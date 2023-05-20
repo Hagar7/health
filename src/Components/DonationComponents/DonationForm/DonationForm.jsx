@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './DonationForm.module.scss'
 import { useTranslation } from 'react-i18next';
-import Donation from '../Donation/Donation';
+import MainDonation from '../MainDonation/MainDonation';
 // import ContactForm from ''';
 
 export default function DonationForm() {
@@ -12,7 +12,7 @@ export default function DonationForm() {
       <div className={`${style.head}`}>
         <h2>{t("donation")}</h2>
       </div>
-      <Donation/>
+      <MainDonation/>
       </div>
       </div>
   )

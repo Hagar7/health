@@ -7,7 +7,7 @@ export const getNewsPage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/news-and-events`,
+        `https://sehetna.org/api/pages/news-and-events`,
         {
           headers: { "X-App-Locale": lang },
         }

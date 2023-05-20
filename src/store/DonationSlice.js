@@ -7,7 +7,7 @@ export const getDonationPage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/contact`,
+        `https://sehetna.org/api/pages/contact`,
         {
           headers: { "X-App-Locale": lang },
         }

@@ -7,7 +7,7 @@ export const getProjectPage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/healthcare-empowerment`,
+        `https://sehetna.org/api/pages/healthcare-empowerment`,
         {
           headers: { "X-App-Locale": lang },
         }

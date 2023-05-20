@@ -55,5 +55,9 @@
     "donation":"DONATION",
     "egp":"EGP",
     "usd":"USD",
-    "amount":"Amount :"
+    "amount":"Amount :",
+    "money":"Alms Giving Program",
+    "donateNow":"Donate Now",
+    "lorem":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam tenetur maiores, fugit et dignissimos veritatis fuga repudiandae dolorum voluptate sequi recusandae sapiente mollitia, ipsa quibusdam, molestiae necessitatibus soluta rerum?",
+    "view":"VIEW ALL"
 }

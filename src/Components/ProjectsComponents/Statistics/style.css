@@ -203,7 +203,7 @@ body[dir="rtl"]  .shapeThree .swiper .mainSwiper{
   }
   .shapeThree .swiper-horizontal > .shapeThree .swiper-pagination-bullets,
   .shapeThree .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top:91% !important;
+  top:89% !important;
   display: block;
   }
   .shapeThree .swiper .mainSwiper{
@@ -245,6 +245,6 @@ body[dir="rtl"]  .shapeThree .swiper .mainSwiper{
     margin-right: 0px !important;
   }
   body[dir="rtl"] .shapeThree .swiper {
-    min-height: 40vh;
+    min-height: 60vh;
   }
 }

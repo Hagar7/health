@@ -9,6 +9,7 @@ import Methology from "../Components/HomeComponents/Methology/Methology";
 import Slider from "../Components/HomeComponents/Slider/Slider";
 import { getHomePage } from "../store/Home.Slice";
 import AnimatedRoutes from "./AnimatedRoutes";
+import HomeDonation from "../Components/HomeComponents/HomeDonation/HomeDonation";
 
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <HomeActivity activites={data?.activities} />
         <Methology methodology={data?.methodology.icons} />
         <HomeFacts facts={data?.facts.cards} />
+        <HomeDonation/>
         <HomeProject project={data?.project} />
         <HomeNews news={data?.news.cards} />
     </>

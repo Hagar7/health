@@ -1,0 +1,372 @@
+@import "../../../index.scss";
+
+
+
+
+.main{
+    padding-top: 50px;
+    .wrap{
+        background-color: $textColor;
+        box-shadow: 1px 0px 5px #0000004d;
+        margin-bottom: 20px;
+        @include borderRadius(10px);
+    }
+    .item{
+        background-image: url('../../../../public/images/don.jpg');
+         background-size: cover;
+         background-position: center;
+         height: 400px;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+    }
+    .content{
+        margin-top: 30px;
+        h4{
+            text-align: center;
+            font-size: 27px;
+            color: $DarkBlueColor;
+            font-weight: 500;
+        }
+        p{
+          margin:30px 10px;
+          text-align: center;
+        }
+        .btns{
+            text-align: center;
+            .one {
+                @include borderRadius(30px);
+                margin: 0 20px 20px 0;
+                height: 60px;
+                width: 180px;
+                background-color: $SecMainColor;
+                border: 1px solid $SecMainColor;
+                @include transition();
+                transform: translate(0px, 0px);
+                -webkit-transform: translate(0px, 0px);
+                -moz-transform: translate(0px, 0px);
+                -ms-transform: translate(0px, 0px);
+                -o-transform: translate(0px, 0px);
+                i {
+                  color: $DarkBlueColor;
+                  margin-left: 25px;
+                }
+                &:hover {
+                  transform: translate(0px, 10px);
+                  -webkit-transform: translate(0px, 10px);
+                  -moz-transform: translate(0px, 10px);
+                  -ms-transform: translate(0px, 10px);
+                  -o-transform: translate(0px, 10px);
+                }
+                i {
+                  margin-left: 5px;
+                }
+              }
+        }
+        
+    }
+  .mainModal{
+    .modalBody{
+      .modalDiaog{
+        .modalContent{
+          .modalHead{
+            h5{
+              color: $SecMainColor;
+            }
+            i{
+              color:$SecMainColor!important;
+              font-size: 35px;
+             cursor: pointer;
+            }
+          }
+          .modalInfo{
+            .donateForm{
+              background-color: $textColor;
+              form{
+                  padding: 20px;
+              .inputData{
+                  .Cntrols{
+                      border: 1px solid #1c476c !important;
+                      &:focus{
+                          box-shadow: 0 0 0 0.10rem #1c476c;
+                      }
+                  }
+              }
+              .formBtns{
+                  text-align: center;
+                  margin: 25px 0 0 ;
+                  .myBtn{
+                      background-color: $DarkBlueColor !important;
+                      border: 1px solid #1c476c !important;
+                      @include borderRadius(30px);
+                      width: 150px;
+                      font-size: 18px;
+                      i{
+                       margin-left: 25px;
+                       color: $mainColor !important;
+                      }
+                   }
+              }
+              }
+          }
+          }
+        }
+      }
+    }
+  }
+}
+
+body[dir='rtl']{
+  .main{
+    .wrap{
+      .item{
+        background-image: url('../../../../public/images/don.jpg');
+         background-size: cover;
+         background-position: center;
+         height: 400px;
+         border-top-right-radius: 0px;
+         border-bottom-right-radius: 0px;
+         border-top-left-radius: 10px;
+         border-bottom-left-radius: 10px;
+    }
+    }
+    .content{
+        margin-top: 30px;
+        h4{
+            font-size: 35px;
+            font-family: "arabic";
+        }
+        p{
+          margin:9px 10px !important;
+          font-family: "arabic";
+        }
+        .btns{
+            .one {
+                i {
+                  margin-right: 25px;
+                }
+              }
+        } 
+    }
+  .mainModal{
+    .modalBody{
+      .modalDiaog{
+        .modalContent{
+          .modalInfo{
+            .donateForm{
+              form{
+              .formBtns{
+                  .myBtn{
+                      width: 150px;
+                      font-size: 18px;
+                      i{
+                       margin-right: 25px;
+                      }
+                   }
+              }
+              }
+          }
+          }
+        }
+      }
+    }
+  }
+} 
+}
+
+@media screen and (max-width: 1399px) {
+  .main{
+    .item{
+       height: 480px;
+  }
+  .content{
+    margin-top: 30px;
+    h4{
+        font-size: 25px;
+    }
+    p{
+      margin:30px 15px;
+      text-align: center;
+    }
+    
+}
+}
+body[dir='rtl']{
+  .main{
+    .wrap{
+      .item{
+         height: 450px;
+    }
+    }
+  .content{
+    margin-top: 30px;
+    h4{
+        font-size: 25px;
+    }
+    p{
+      margin:30px 15px;
+      text-align: center;
+    }
+    
+}
+}
+}
+}
+
+@media screen and (max-width: 1279px) {
+  .main{
+      .item{
+         height: 520px;
+    }
+}
+body[dir='rtl']{
+  .main{
+    .wrap{
+      .item{
+         height: 590px !important;
+    }
+    }
+    .content{
+        margin-top: 30px;
+        h4{
+            font-size: 35px;
+            font-family: "arabic";
+        }
+        p{
+          margin:9px 10px !important;
+          font-family: "arabic";
+        }
+    }
+} 
+}
+}
+@media screen and (max-width: 1280px) {
+  .main{
+      .item{
+         height: 520px;
+    }
+}
+body[dir='rtl']{
+  .main{
+    .wrap{
+      .item{
+         height: 550px !important;
+    }
+    }
+
+} 
+}
+}
+@media screen and (max-width: 1024px) {
+  .main{
+      .item{
+         height: 520px;
+    }
+}
+body[dir='rtl']{
+  .main{
+    .wrap{
+      .item{
+         height: 490px !important;
+    }
+    }
+} 
+}
+}
+@media screen and (max-width: 767px) {
+    .main{
+        .head {
+            justify-content: center;
+            h2{
+              font-size: 30px;
+             text-align: center;
+             margin-bottom: 10px;
+            }
+            .two {
+              display: none;
+            }
+          }
+          .divyflex {
+            display: block;
+            .btnflex {
+              @include borderRadius(30px);
+              margin: 0 20px 20px 0;
+              height: 60px;
+              width: 200px;
+              background-color: $DarkBlueColor;
+              border: 1px solid $DarkBlueColor;
+              @include transition();
+              transform: translate(0px, 0px);
+              -webkit-transform: translate(0px, 0px);
+              -moz-transform: translate(0px, 0px);
+              -ms-transform: translate(0px, 0px);
+              -o-transform: translate(0px, 0px);
+              font-size: 20px;
+              i {
+                color: $SecMainColor;
+              }
+              &:hover {
+                transform: translate(0px, 10px);
+                -webkit-transform: translate(0px, 10px);
+                -moz-transform: translate(0px, 10px);
+                -ms-transform: translate(0px, 10px);
+                -o-transform: translate(0px, 10px);
+              }
+              i {
+                margin-left: 5px;
+              }
+            }
+          }
+          .item{
+             height: 430px;
+        }
+    } 
+    body[dir='rtl']{
+      .main{
+        .head {
+            justify-content: center;
+            h2{
+              font-size: 30px;
+             text-align: center;
+             margin-bottom: 10px;
+            }
+            .two {
+              display: none;
+            }
+          }
+          .divyflex {
+            display: block;
+            .btnflex {
+              @include borderRadius(30px);
+              margin: 0 20px 20px 0;
+              height: 60px;
+              width: 200px;
+              background-color: $DarkBlueColor;
+              border: 1px solid $DarkBlueColor;
+              @include transition();
+              transform: translate(0px, 0px);
+              -webkit-transform: translate(0px, 0px);
+              -moz-transform: translate(0px, 0px);
+              -ms-transform: translate(0px, 0px);
+              -o-transform: translate(0px, 0px);
+              font-size: 20px;
+              i {
+                color: $SecMainColor;
+              }
+              &:hover {
+                transform: translate(0px, 10px);
+                -webkit-transform: translate(0px, 10px);
+                -moz-transform: translate(0px, 10px);
+                -ms-transform: translate(0px, 10px);
+                -o-transform: translate(0px, 10px);
+              }
+              i {
+                margin-left: 5px;
+              }
+            }
+          }
+          .item{
+             height: 430px;
+        }
+    } 
+    } 
+}

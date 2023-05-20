@@ -7,7 +7,7 @@ export const getHomePage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/home`,
+        `https://sehetna.org/api/pages/home`,
         {
           headers: { "X-App-Locale": lang },
         }

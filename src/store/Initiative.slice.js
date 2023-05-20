@@ -7,7 +7,7 @@ export const getInitiativePage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/initiative`,
+        `https://sehetna.org/api/pages/initiative`,
         {
           headers: { "X-App-Locale": lang },
         }

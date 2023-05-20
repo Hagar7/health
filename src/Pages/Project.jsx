@@ -7,15 +7,17 @@ import Statistics from "../Components/ProjectsComponents/Statistics/Statistics";
 import ProjectGallery from "../Components/ProjectsComponents/ProjectGallery/ProjectGallery";
 import AnimatedRoutes from "./AnimatedRoutes";
 import ProGallery from "../Components/ProjectsComponents/ProGallery/ProGallery";
+import { useParams } from "react-router-dom";
 
 export default function Project() {
+  const { id } = useParams();
   const dispatch = useDispatch();
   const { info } = useSelector((state) => state.projectId);
   const { data } = useSelector((state) => state.project);
   const { lang } = useSelector((state) => state.loading);
   useEffect(() => {
-    dispatch(getProjectId(lang));
-  }, [dispatch, lang]);
+    dispatch(getProjectId({ lang, id }));
+  }, [dispatch, lang, id]);
   return (
     <>
       <AnimatedRoutes />

@@ -10,6 +10,9 @@ import loading from './Loading.Slice'
 import contact from './Contact.Slice'
 import career from './Career.Slice'
 import donation from './DonationSlice'
+import careerForm from './CareerForm.Slice'
+import ContactForm from "./ContactForm.Slice";
+import CollaborateSlice from "./Collaborate.Slice";
 export default configureStore({
   reducer: {
     home,
@@ -22,6 +25,9 @@ export default configureStore({
     loading,
     contact,
     career,
-    donation
+    donation,
+    careerForm,
+    ContactForm,
+    CollaborateSlice
   },
 });

@@ -7,7 +7,7 @@ export const getCareerPage = createAsyncThunk(
     const { rejectWithValue } = thunkAPI;
     try {
       const { data } = await axios(
-        `https://sehetna.ok-adv.com/api/pages/careers`,
+        `https://sehetna.org/api/pages/careers`,
         {
           headers: { "X-App-Locale": lang },
         }

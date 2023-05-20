@@ -18,7 +18,7 @@ export default function ProjectsMain() {
     <AnimatedRoutes/>
       <ProjectBanner banner={data?.banner} />
       <MainProjectsPage thengo={data?.thengo} />
-      <MainProjects projects={data?.projects.cards} />
+      <MainProjects projects={data?.projects} />
     </>
   );
 }

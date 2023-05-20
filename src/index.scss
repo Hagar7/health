@@ -110,3 +110,24 @@ body[dir="rtl"] {
   }
 }
 
+.swal2-container{
+  z-index: 999999999999 !important;
+}
+
+.swal2-title{
+  color: #1c476c !important;
+}
+
+
+.swal2-styled.swal2-confirm{
+  background-color: #e85530 !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring,.swal2-html-container{
+  color: #e85530 !important ;
+}
+
+.msgAlert{
+  background-color: transparent !important;
+  color: $SecMainColor !important;
+  border: 1px solid transparent !important;
+}
