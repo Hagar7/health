@@ -22,8 +22,12 @@ export default function Project() {
     <>
       <AnimatedRoutes />
       <ProjectBanner banner={data?.banner} />
-      <ProjectTitle statistics={info?.statistics} />
-      <Statistics statistics={info?.statistics.cards} />
+      {info?.statistics? (
+        <>
+         <ProjectTitle statistics={info?.statistics} />
+         <Statistics statistics={info?.statistics.cards} />
+         </>):""}
+   
       {info?.videos ? (
         <ProjectGallery gallery={info?.images} video={info?.videos.videos} />
       ) : (

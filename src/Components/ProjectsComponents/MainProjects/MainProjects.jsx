@@ -20,7 +20,7 @@ export default function MainProjects({ projects }) {
                     <h6>{item.title}</h6>
                     <Link to={`/projects/${item.id}`}>
                       <button className={`${style.two} btn btn-primary`}>
-                        {item.btn1Text}
+                        {item.btnText}
                         {i18n.language === "en" && (
                           <i className="fa-solid fa-chevron-right"></i>
                         )}

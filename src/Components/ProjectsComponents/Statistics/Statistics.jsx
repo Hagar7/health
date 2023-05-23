@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 export default function Statistics({statistics}) {
   const [t, i18n] = useTranslation();
   return (
+    statistics &&
     <div className={`${style.main}`}>
     <div className="container">
       <div className="shapeThree">
