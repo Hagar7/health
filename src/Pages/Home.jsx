@@ -29,7 +29,7 @@ export default function Home() {
         <HomeActivity activites={data?.activities} />
         <Methology methodology={data?.methodology.icons} />
         <HomeFacts facts={data?.facts.cards} />
-        <HomeDonation/>
+        {/* <HomeDonation/> */}
         <HomeProject project={data?.project} />
         <HomeNews news={data?.news.cards} />
     </>

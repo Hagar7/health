@@ -60,6 +60,13 @@ export default function JourneyGallery({ journey }) {
               fill: "row",
             },
           },
+          1480: {
+            slidesPerView: 3,
+            grid: {
+              rows: 2,
+              fill: "row",
+            },
+          },
         }}
         pagination={{
           clickable: true,

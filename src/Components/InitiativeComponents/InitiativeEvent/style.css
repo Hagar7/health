@@ -17,8 +17,9 @@
   
   .journeyImg  .swiper-slide img {
     display: block;
-    width: 250px;
-    height: 200px;
+    /* width: 250px; */
+    width: 90%;
+    height: fit-content;
     object-fit: cover;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -31,6 +32,37 @@
 .journeyImg .swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
+
+@media screen and (max-width: 1424px) {
+  .journeyImg  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 15px;
+}
+.journeyImg .swiper-horizontal > .journeyImg .swiper-pagination-bullets,
+.journeyImg .swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: block;
+}
+.swiper-pagination-bullet-active {
+  background-color:#e85530 ;
+  height: 11px;
+  width: 11px;
+  }
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1024px) {
   .journeyImg .swiper {

@@ -169,7 +169,8 @@ export default function MobileNav({ setLang }) {
               {t("contactmenu")}
             </NavLink>
           </div>
-          <div className={`${style.item}`}>
+          {/* Donation */}
+          {/* <div className={`${style.item}`}>
             <i className="fa-solid fa-chevron-right"></i>
             <NavLink
               to="donation"
@@ -178,8 +179,7 @@ export default function MobileNav({ setLang }) {
             >
               {t("donation")}
             </NavLink>
-          </div>
-
+          </div> */}
         </div>
 
         <div
@@ -194,14 +194,14 @@ export default function MobileNav({ setLang }) {
           </div>
           <div className={`${style.social}`}>
             <a
-              href="https://www.facebook.com/SehetnaFoundation/"
+              href="https://www.facebook.com/profile.php?id=100087447270793&_rdc=1&_rdr"
               target={`_blank`}
             >
               <i className="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://twitter.com/sehetna1?s=21" target={`_blank`}>
+            {/* <a href="https://twitter.com/sehetna1?s=21" target={`_blank`}>
               <i className="fa-brands fa-twitter"></i>
-            </a>
+            </a> */}
             <a
               href="https://www.instagram.com/sehetna_foundation/?utm_medium=copy_link"
               target={`_blank`}

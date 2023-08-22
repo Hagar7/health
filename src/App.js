@@ -29,7 +29,7 @@ function App() {
         { path: "projects/:id", element: <Project /> },
         { path: "contact", element: <Contact/> },
         { path: "career", element: <Career /> },
-        { path: "donation", element: <Donation /> },
+        // { path: "donation", element: <Donation /> },
       ],
     },
   ]);

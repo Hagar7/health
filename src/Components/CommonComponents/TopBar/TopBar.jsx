@@ -14,26 +14,32 @@ export default function TopBar({ setLang }) {
         <span>{t("phone")}</span>
       </div>
       <div className={`${style.right}`}>
-        <NavLink to="career" className={({ isActive }) =>
-              isActive ? " nav-link hoverClr orange" : "nav-link orange"
-            }>
+        <NavLink
+          to="career"
+          className={({ isActive }) =>
+            isActive ? " nav-link hoverClr orange" : "nav-link orange"
+          }
+        >
           <span className={`${style.lastar}`}>{t("carrerMenu")}</span>
         </NavLink>
-        <NavLink to="contact" className={({ isActive }) =>
-              isActive ? " nav-link hoverClr orange" : "nav-link orange"
-            }>
+        <NavLink
+          to="contact"
+          className={({ isActive }) =>
+            isActive ? " nav-link hoverClr orange" : "nav-link orange"
+          }
+        >
           <span>{t("contactmenu")}</span>
         </NavLink>
-        <NavLink to="donation" className={({ isActive }) =>
+        {/* <NavLink to="donation" className={({ isActive }) =>
               isActive ? " nav-link hoverClr orange" : "nav-link orange"
             }>
           <span>{t("donation")}</span>
-        </NavLink>
+        </NavLink> */}
         {i18n.language === "en" && (
           <NavLink
-          className={({ isActive }) =>
-          isActive ? " nav-link orange" : "nav-link orange"
-        }
+            className={({ isActive }) =>
+              isActive ? " nav-link orange" : "nav-link orange"
+            }
             onClick={() => {
               localStorage.setItem("lang", "ar");
               i18n.changeLanguage("ar");
@@ -45,9 +51,9 @@ export default function TopBar({ setLang }) {
         )}
         {i18n.language === "ar" && (
           <NavLink
-          className={({ isActive }) =>
-          isActive ? " nav-link orange" : "nav-link orange"
-        }
+            className={({ isActive }) =>
+              isActive ? " nav-link orange" : "nav-link orange"
+            }
             onClick={() => {
               localStorage.setItem("lang", "en");
               i18n.changeLanguage("en");
